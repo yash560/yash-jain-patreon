@@ -1,0 +1,190 @@
+.header {
+  height: 58px;
+  position: fixed;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  width: 100vw;
+  left: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+}
+.headerSm {
+  display: none;
+}
+.headerLeft,
+.headerRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+
+  justify-content: space-evenly;
+}
+.headerLeftComponent {
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+.logoImage {
+  height: 40px;
+}
+.fa-chevron-down {
+  margin-left: 0.3rem;
+}
+.headerSearchbarSM {
+  display: none;
+}
+.headerSearchbar {
+  width: 230px;
+  box-sizing: border-box;
+  border: 2px solid rgb(243, 243, 243);
+  background-color: rgb(243, 243, 243);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 1rem;
+  background-size: 12px;
+  background-image: url("https://image.flaticon.com/icons/png/128/482/482631.png");
+  background-position: 12px 8px;
+  background-repeat: no-repeat;
+  padding: 6px 10px 6px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.headerSearchbar:focus {
+  outline: none;
+}
+.headerRightComponent {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.createAccountButton {
+  background-color: #ff424d;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.createAccountButton:hover {
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  color: #ff424d;
+  border: 1px solid #ff424d;
+  letter-spacing: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.productComponent:hover .productDropdown {
+  height: 270px;
+  transition: 0.3s ease;
+  visibility: visible;
+}
+.productDropdown {
+  position: absolute;
+  width: 230px;
+  transition: 0.3s ease;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.productDropdownComponent {
+  margin: 0.2rem 0;
+  padding: 0.2rem;
+}
+.productDropdownComponent:hover {
+  background-color: rgb(236, 236, 236);
+  margin: 0.2rem 0;
+}
+.productDropdownComponentHead {
+  padding: 0.5rem 1rem;
+  font-weight: lighter;
+
+  color: rgb(0, 0, 0);
+}
+.productDropdownComponentBody {
+  font-weight: lighter;
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+}
+.creatorComponent:hover .creatorDropdown {
+  height: 500px;
+  transition: 0.3s ease;
+  visibility: visible;
+}
+.creatorDropdown {
+  position: absolute;
+  width: 180px;
+  transition: 0.3s ease;
+  visibility: hidden;
+
+  height: 0;
+  overflow: hidden;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.creatorDropdownComponent {
+  margin: 0.2rem 0;
+
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.creatorDropdownComponent:hover {
+  background-color: rgb(236, 236, 236);
+}
+.creatorDropdownComponentHead {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(46, 121, 156);
+  align-items: center;
+  background-color: transparent;
+}
+.creatorDropdownComponentBody {
+  background-color: transparent;
+  text-align: left;
+  color: black;
+  font-weight: 400;
+
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+.resourcesComponent:hover .resourcesDropdown {
+  height: 300px;
+  transition: 0.3s ease;
+  visibility: visible;
+}
+.resourcesDropdown {
+  position: absolute;
+  visibility: hidden;
+
+  width: 180px;
+  transition: 0.3s ease;
+
+  height: 0;
+  overflow: hidden;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}

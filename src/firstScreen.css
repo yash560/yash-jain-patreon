@@ -1,0 +1,93 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Screen {
+  width: 1300px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.firstScreen {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.firstScreenComponent {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.firstScreenComponentHeader {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  font-size: 230%;
+  font-weight: 700;
+}
+.firstScreenComponentBody {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+.getStarted {
+  background-color: #ff424d;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+@media (max-width: 1085px) {
+  .firstScreenComponent {
+    height: 300px;
+    width: 400px;
+  }
+}
+@media (max-width: 819px) {
+  .firstScreenComponent {
+    height: 200px;
+    width: 300px;
+  }
+}
+@media (max-width: 641px) {
+  .firstScreenComponent {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+  }
+  .firstScreen {
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .firstScreenComponentHeader {
+    text-align: center;
+  }
+  .firstScreenComponentBody {
+    text-align: center;
+  }
+  .Screen {
+    width: 100vw;
+    height: 900px;
+  }
+  .getStarted {
+    margin: auto;
+  }
+}

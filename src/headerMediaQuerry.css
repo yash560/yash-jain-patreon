@@ -1,0 +1,41 @@
+@media (max-width: 1019px) {
+  .headerSm {
+    height: 58px;
+    position: fixed;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    width: 100vw;
+    left: 0;
+    top: 56px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(92, 92, 92);
+  }
+  .headerSearchbarSM {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(243, 243, 243);
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 1rem;
+    background-size: 12px;
+    background-image: url("https://image.flaticon.com/icons/png/128/482/482631.png");
+    background-position: 12px 8px;
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .headerLeftComponent,
+  .headerSearchbar {
+    display: none;
+  }
+}

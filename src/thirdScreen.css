@@ -1,0 +1,130 @@
+.thirdScreen {
+  background-color: white;
+  height: 800px;
+  width: 98.5vw;
+  display: grid;
+  place-items: center;
+}
+.thirdScreenInner {
+  width: 1200px;
+  height: 800px;
+}
+.thirdScreenHeader {
+  font-size: 250%;
+  width: 100%;
+  height: fit-content;
+
+  text-align: center;
+  margin-top: 5rem;
+  font-weight: 700;
+  color: black;
+}
+.thirdScreenBody {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.thirdScreenBodyComponent {
+  width: 280px;
+  color: black;
+  margin: 2rem;
+  height: 320px;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.thirdScreenBodyComponentHeader {
+  font-weight: 800;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  height: fit-content;
+  color: rgb(255, 66, 77);
+  margin: 1rem 0 00 0;
+}
+.thirdScreenBodyComponentBody {
+  text-align: left;
+  font-size: 0.9rem;
+  margin: 1rem 0 0 0;
+  width: 100%;
+}
+.thirdScreenBodyIcon {
+  width: 500px;
+  height: 800px;
+}
+.thirdScreenImage {
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1100px) {
+  .thirdScreenInner {
+    width: 100vw;
+    height: fit-content;
+  }
+  .thirdScreenBodyIcon {
+    width: 100%;
+    height: 100%;
+  }
+  .thirdScreenImage {
+    width: 100%;
+    height: 100%;
+  }
+  .thirdScreen {
+    background-color: white;
+    height: 600px;
+    width: 98.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1045px) {
+  .thirdScreenInner {
+    width: 100vw;
+    height: fit-content;
+  }
+  .thirdScreenBodyIcon {
+    width: 100%;
+    height: 100%;
+  }
+  .thirdScreenImage {
+    width: 100%;
+    height: 100%;
+  }
+  .thirdScreen {
+    background-color: white;
+    height: 1100px;
+    width: 98.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 785px) {
+  .thirdScreenBodyComponent {
+    width: 33.3%;
+    height: 320px;
+  }
+}
+@media (max-width: 495px) {
+  .thirdScreenBody {
+    flex-direction: row !important;
+    height: fit-content;
+  }
+  .thirdScreenBodyComponent {
+    width: 80%;
+    height: 320px;
+  }
+  .thirdScreen {
+    height: fit-content;
+  }
+  .thirdScreenInner {
+    height: fit-content;
+  }
+}
