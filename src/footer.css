@@ -1,0 +1,150 @@
+.footer {
+  min-height: 600px;
+  background-color: rgb(20, 21, 24);
+  width: 100vw;
+  color: white !important;
+}
+.bold {
+  font-weight: bold;
+}
+.footerInside {
+  height: 100%;
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.footerLogo {
+  height: 80px;
+  width: 100%;
+}
+.footerLogoImage {
+  height: 100%;
+}
+.footerComponent {
+  height: 90%;
+  width: 20%;
+  background-color: transparent;
+}
+.footerOutlinedButtons {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.7rem;
+  font-weight: bold;
+
+  margin: 00.4rem;
+}
+.footerComponetHeader {
+  font-size: x-small;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+.footerComponentRight {
+  display: flex;
+  width: 400px;
+  margin: 0.1rem 0;
+  height: 400px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 5rem;
+}
+.footerComponetBody {
+  margin-bottom: 0.3rem;
+  text-transform: capitalize;
+  font-size: small;
+}
+.footerComponentInner {
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.footerComponentLeft {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footerIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+.socialButtons {
+  height: 40px;
+  display: grid;
+  margin: 0.3rem;
+  place-items: center;
+  cursor: pointer;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(53, 53, 53);
+  transition: 0.5 ease;
+}
+.socialButtons:hover {
+  transition: 1 ease;
+  background-color: rgb(104, 104, 104);
+}
+.trademark {
+  width: 150px;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+.address {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+}
+.footerRight {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (max-width: 1200px) {
+  .footerRight {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footerInside {
+    height: 100%;
+    width: 90%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 900px) {
+  .footerInside {
+    width: 90%;
+    flex-direction: column;
+  }
+  .footer {
+    min-height: 1000px;
+    background-color: rgb(20, 21, 24);
+    width: 100vw;
+    color: white !important;
+  }
+  .footerComponentLeft {
+    flex-direction: row;
+    width: 100%;
+  }
+  .footerComponentRight {
+    width: 50%;
+  }
+  .footerComponentLeftStart {
+    width: 40%;
+  }
+}
+@media (max-width: 583px) {
+  .footerComponentLeftStart {
+    width: 100%;
+  }
+}

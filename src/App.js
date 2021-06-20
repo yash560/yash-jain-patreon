@@ -4,7 +4,7 @@ import "./secondScreen.css";
 import "./thirdScreen.css";
 import "./fourthScreen.css";
 import "./fifthScreen.css";
-
+import Footer from "./Footer";
 import Header from "./Header";
 function App() {
   return (
@@ -263,6 +263,7 @@ function App() {
         </div>{" "}
         <div class="getStarted buttonScreensSixth">Get Started</div>
       </div>
+      <Footer />
     </div>
   );
 }
