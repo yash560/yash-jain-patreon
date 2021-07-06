@@ -1,9 +1,9 @@
 import "./App.css";
-import "./firstScreen.css";
-import "./secondScreen.css";
-import "./thirdScreen.css";
-import "./fourthScreen.css";
-import "./fifthScreen.css";
+import "./podcasts/firstScreen.css";
+import "./podcasts/secondScreen.css";
+import "./podcasts/thirdScreen.css";
+import "./podcasts/fourthScreen.css";
+import "./podcasts/fifthScreen.css";
 import Footer from "./Footer";
 import Header from "./Header";
 function App() {
@@ -57,7 +57,7 @@ function App() {
             <div class="secondScreenBodyComponent">
               <div class="secondScreenImage">
                 <div class="secondScreenBodyIcon"></div>
-              </div>{" "}
+              </div>
               <div class="secondScreenComponentBody">
                 <div class="secondScreenBodyComponentHeader">
                   Know your community
@@ -65,13 +65,15 @@ function App() {
                 <div class="secondScreenBodyComponentBody">
                   You own the relationship with your fans and get access to them
                   directly. We don't stand in the way.
-                </div>{" "}
+                </div>
               </div>
             </div>
             <div class="secondScreenBodyComponent">
               <div class="secondScreenImage">
-                <div class="secondScreenBodyIcon"></div>
-              </div>{" "}
+                <div class="secondScreenBodyIcon">
+                  <img height="100%" width="100%" alt="" />
+                </div>
+              </div>
               <div class="secondScreenComponentBody">
                 <div class="secondScreenBodyComponentHeader">
                   Be independent
@@ -79,7 +81,7 @@ function App() {
                 <div class="secondScreenBodyComponentBody">
                   Live in a world not reliant on ads or paid sponsorships to
                   keep your business running.
-                </div>{" "}
+                </div>
               </div>
             </div>
           </div>
@@ -188,7 +190,7 @@ function App() {
               <div class="fourthScreenBodyComponentHeader">
                 2 Back Girls, 1 Rose
               </div>
-            </div>{" "}
+            </div>
             <div class="fourthScreenBodyComponent">
               <div class="fourthScreenBodyIcon">
                 <img
@@ -241,7 +243,14 @@ function App() {
         <div class="fifthScreenInner">
           <div class="fifthScreenBody">
             <div class="fifthScreenBodyLeft">
-              <div class="fifthScreenPeople"></div>
+              <div class="fifthScreenPeople">
+                <img
+                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/podcaster-heather-testimonial_2x.png"
+                  alt=""
+                  height="100%"
+                  width="100%"
+                />
+              </div>
               <div class="fifthScreenPeopleName">
                 Heather
                 <br /> MCDonald
@@ -256,11 +265,11 @@ function App() {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <div class="sixthScreen">
         <div class="thirdScreenHeader">
           Ready to build your membership business?
-        </div>{" "}
+        </div>
         <div class="getStarted buttonScreensSixth">Get Started</div>
       </div>
       <Footer />

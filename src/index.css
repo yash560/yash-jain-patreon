@@ -7,7 +7,7 @@
 .fas {
   cursor: pointer;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -21,10 +21,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */
 body,
 html {
   overflow-x: hidden;
+  font-family: Walsheim, sans-serif;
+
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
 }

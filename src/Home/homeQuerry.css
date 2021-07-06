@@ -1,0 +1,26 @@
+@media (max-width: 1200px) {
+  .homeMain {
+    width: 100vw;
+  }
+}
+@media (max-width: 1060px) {
+  .homeCenter {
+    width: 70%;
+  }
+  .homeLeft,
+  .homeCenter {
+    margin-top: 4rem;
+  }
+  .homeRight {
+    width: 98%;
+  }
+}
+@media (max-width: 773px) {
+  .homeCenter {
+    width: 95%;
+    margin: auto;
+  }
+  .homeLeft {
+    width: 98%;
+  }
+}

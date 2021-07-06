@@ -1,0 +1,80 @@
+.mainCanva {
+  background: #fafafa;
+  color: #0e0e0e;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.625rem 0;
+  position: relative;
+  width: 79.5%;
+  margin-left: auto;
+}
+.input {
+  background: 1rem 50% no-repeat
+    url("https://image.flaticon.com/icons/png/512/622/622669.png");
+  font-size: 1rem;
+  background-size: 20px;
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  width: 93%;
+  height: 3.125rem;
+  margin-top: 3rem;
+  margin-left: 2.3rem;
+  border: 1px solid lightgray;
+}
+.card {
+  margin-top: 0.8rem;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem;
+  width: 93%;
+  margin-bottom: 0.9375rem;
+  border: 1px solid #dadada;
+  background: #fff;
+  margin-left: 2.3rem;
+}
+.MainBodyHeader {
+  width: 100%;
+  display: flex;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 500;
+  justify-content: space-between;
+  margin-bottom: 0.9375rem;
+}
+.CardsContainer {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr) [end];
+  grid-gap: 0.9375rem;
+  justify-items: stretch;
+  align-items: stretch;
+  border-radius: 0.3125rem;
+}
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

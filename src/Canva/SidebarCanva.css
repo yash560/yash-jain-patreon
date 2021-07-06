@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* ::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+} */
+
+.sidebar {
+  position: fixed;
+  z-index: 14;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 17.5rem;
+  height: 100%;
+  -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 16%);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 16%);
+  background-color: #fff;
+}
+.sidebar__header {
+  padding: 1.5rem 1.25rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #f2f2f2;
+
+  padding-bottom: 0.7rem;
+}
+
+.sidebarLogo {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  width: 6.25rem;
+  color: inherit;
+  display: inline;
+  font-size: inherit;
+  font-weight: 600;
+  fill: currentColor;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+  -webkit-transition: opacity 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.sidebarIconsDiv {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  width: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebarIcon {
+  max-height: 1rem;
+}
+.sidebarSeperator {
+  border-bottom: 1px solid #f2f2f2;
+  margin: 0.75rem 0 0;
+}
+.sidebarContainer {
+  overflow: hidden;
+
+  height: 100%;
+  padding: 0.75rem 0 6.25rem;
+}
+.sidebarItemContainer {
+  position: relative;
+  min-width: 17.5rem;
+  min-height: 3rem;
+  padding: 0 1.5rem;
+  color: #0e0e0e;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebarItemText {
+  font-size: 0.875rem;
+  line-height: 130%;
+}
+.sidebarItemIcon {
+  margin-right: 1rem;
+  margin-left: 0.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.sidebarSectionHeader {
+  padding: 2rem 1.5rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  -webkit-box-pack: justify;
+  display: flex;
+  -ms-flex-pack: justify;
+  font-size: 0.75rem;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebarJoinButton {
+  text-transform: uppercase;
+  border: 1px solid #0e0e0e;
+  display: flex;
+  font-size: 0.75rem;
+
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 0.25rem 0.5rem;
+  -webkit-transition: background-color 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background-color 125ms cubic-bezier(0.25, 0.1, 0.25);
+}
+.sidebarSearchbar {
+  position: absolute;
+  width: 80%;
+  margin: auto !important;
+  height: 2.5rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 100px;
+  background-color: #fafafa;
+  padding: 0px 2.75rem;
+  box-shadow: none;
+  outline: none;
+}
+.sidebarSearchbar:focus {
+  border: 1px solid #272727;
+}

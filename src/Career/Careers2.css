@@ -1,0 +1,41 @@
+.ScreenTwoCareer {
+  width: 98vw;
+  margin: 5rem auto;
+}
+
+.ScreenTwoCareerComponent {
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.ScreenTwoCareerComponentImage {
+  height: 100%;
+  width: 100%;
+}
+.ScreenTwoCareerComponentImage1 {
+  justify-self: flex-start;
+  align-self: flex-end;
+}
+.ScreenTwoCareerComponentOneInsideMain {
+  width: 60.6667%;
+  margin: 0.5rem;
+}
+
+.ScreenTwoCareerComponentTwoIn {
+  width: 20%;
+  margin: 0.5rem;
+}
+.ScreenTwoCareerComponentImage2 {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.ScreenTwoCareerComponentTHree {
+  width: 20%;
+  margin: 0.5rem;
+}
+.ScreenTwoCareerComponentFourMain {
+  width: 60.6667%;
+  margin: 0.5rem;
+}

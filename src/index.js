@@ -1,14 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Pricing from "./Pricing";
+import Home from "./Home/Home";
+import Careers from "./Career/Careers";
+import Canva from "./Canva/Canva";
 
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/Podcasts">
+          <App />
+        </Route>{" "}
+        <Route exact path="/Canva">
+          <Canva />
+        </Route>
+        <Route exact path="/Pricing">
+          <Pricing />
+        </Route>
+        <Route exact path="/Home">
+          <Home />
+        </Route>{" "}
+        <Route exact path="/Careers">
+          <Careers />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 reportWebVitals();

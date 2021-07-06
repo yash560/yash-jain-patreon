@@ -1,0 +1,44 @@
+@media (max-width: 1000px) {
+  .CareersMainScreenThree,
+  .CareersMainScreenTwoComponentsTwo,
+  .CareersMainScreenTwoComponentsThree,
+  .CareersMainScreenThree,
+  .CareersMainScreenTwoComponentsFour,
+  .gallerySectionInsideText {
+    flex-basis: 100%;
+  }
+  .gallerySectionInsideImage,
+  .gallerySectionInsideOther,
+  .gallerySectionInsideContainer {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .galleryCardSection {
+    flex-direction: column;
+  }
+  .gallerySectionInsideContainer,
+  .gallerySectionInsideContainerIn {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 750px) {
+  .ScreenTwoCareerComponentOneInsideMain,
+  .ScreenTwoCareerComponentTwoIn,
+  .ScreenTwoCareerComponentTHree,
+  .ScreenTwoCareerComponentFourMain {
+    width: 100%;
+    margin: 0 1rem;
+  }
+  .benefitsSectionInnerMainContainer {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .benefitsSectionContainer {
+    flex-basis: 100%;
+  }
+  .benefitsSectionInnerMainContainerComponentInsideBodyText {
+    width: 80%;
+    margin: auto;
+  }
+}

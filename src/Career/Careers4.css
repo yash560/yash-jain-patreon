@@ -1,0 +1,169 @@
+.gallerySection {
+  padding: 0 3rem;
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  padding: 2.5rem;
+}
+.galleryCardSection {
+  padding: 0 3rem;
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+.gallerySectionInside {
+  align-items: flex-start;
+  place-content: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  padding: 0rem;
+  margin: 0rem auto;
+
+  background-color: transparent;
+}
+.gallerySectionInsideContainer {
+  flex-basis: 41%;
+  margin: 0rem auto;
+
+  box-sizing: border-box;
+  display: block;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  padding: 0rem 0rem 1rem;
+  margin: 0rem;
+}
+.bZKCIO {
+  place-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  -webkit-box-flex: initial;
+  flex-grow: initial;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  margin: 0rem auto;
+
+  background-color: rgb(229, 227, 221);
+  padding: 0rem;
+}
+
+.gallerySectionInsideImage {
+  flex-basis: 44%;
+  background-image: url("https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2021/04/careers-resources-table.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 25rem;
+}
+.gallerySectionInsideContainer {
+  box-sizing: border-box;
+  display: block;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  padding: 0rem 0rem 1rem;
+  margin: 0rem;
+}
+.bEFvXX {
+  position: relative;
+  width: 100%;
+}
+.gallerySectionInsideText {
+  flex-basis: 55%;
+  padding: 3rem;
+  background-color: rgb(245, 244, 242);
+  color: rgb(36, 30, 18);
+  font-family: aktiv-grotesk, sans-serif;
+  position: relative;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  font-weight: 700;
+  margin: 0 1rem 2rem 1rem;
+
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.colorBoxes {
+  width: 100%;
+  height: 30rem;
+}
+.gallerySectionInsideOther {
+  margin: -4rem 0.5rem 0 0;
+  flex-basis: 50%;
+}
+
+.gallerySectionInsideContent {
+  place-content: flex-start center;
+  align-items: flex-start;
+  display: flex;
+  -webkit-box-flex: initial;
+  flex-grow: initial;
+  flex-flow: column nowrap;
+  height: 35rem;
+  -webkit-box-pack: center;
+  min-height: 19rem;
+  background-color: rgb(255, 66, 77);
+  padding: 5rem;
+}
+.gallerySectionInsideContentHeader {
+  color: rgb(255, 255, 255);
+  font-family: aktiv-grotesk, sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.gallerySectionInsideContentBody {
+  color: rgb(255, 255, 255);
+  font-family: Walsheim, sans-serif;
+  position: relative;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+  font-size: 2.625rem;
+  line-height: 1.25;
+}
+.gallerySectionInsideContainerIn {
+  place-content: flex-start center;
+  align-items: flex-start;
+  display: flex;
+  margin: 0rem auto;
+
+  -webkit-box-flex: initial;
+  flex-grow: initial;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  min-height: 19rem;
+  background-color: rgb(36, 30, 18);
+  padding: 3rem;
+  height: 35rem;
+}
+.gallerySectionInsideContentButton {
+  -webkit-box-align: center;
+  align-items: center;
+  backface-visibility: hidden;
+  background-color: rgb(255, 66, 77);
+  border-radius: 9999px;
+  border: 1px solid rgb(255, 66, 77);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 500;
+  height: unset;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0.78125rem 1.5rem;
+  position: relative;
+  pointer-events: unset;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  user-select: none;
+  white-space: unset;
+  width: unset;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}

@@ -1,0 +1,300 @@
+.CareersMainScreen {
+  width: 100%;
+  min-height: 60vh;
+}
+.CareersMainScreenInOne {
+  align-items: center;
+  background-color: rgb(36, 30, 18);
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem;
+  margin: 0rem;
+  min-height: max(35vw, 500px);
+  background-image: url(https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2021/04/careers-hero-background-2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.CareersMainScreenInTwo {
+  height: unset;
+  width: unset;
+  padding-top: 0.5rem;
+}
+.CareersMainScreenInThree {
+  display: flex;
+  flex-flow: column wrap;
+  height: unset;
+  width: unset;
+  margin: -1rem -0.5rem -0.5rem;
+}
+.CareersMainScreenInComponent {
+  height: unset;
+  width: unset;
+  margin: 0.5rem;
+}
+
+.CareersMainScreenInComponentTextOne {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.CareersMainScreenInComponentTextTwo {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  position: relative;
+  font-weight: 600;
+  font-size: 2.625rem;
+  line-height: 1.25;
+}
+.CareersMainScreenInComponentTextThree {
+  align-items: center;
+  backface-visibility: hidden;
+  background-color: rgb(255, 66, 77);
+  border-radius: 9999px;
+  border: 1px solid rgb(255, 66, 77);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 500;
+  height: unset;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0.78125rem 1.5rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  white-space: unset;
+  width: unset;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+.CareersMainScreenTwo {
+  width: 100%;
+  display: flex;
+}
+.CareersMainScreenTwoInOne {
+  box-sizing: border-box;
+  margin: 0px auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.CareersMainScreenComponentInside {
+  max-width: 1024px;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.CareersMainScreenTwoInTwo {
+  align-items: flex-start;
+  place-content: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  padding: 0rem;
+  margin: 0rem -0.5rem;
+}
+.CareersMainScreenThree {
+  flex-basis: 50%;
+}
+.CareersMainScreenFour {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 0rem;
+  margin: 0rem;
+}
+.CareersMainScreenFive {
+  background-color: rgb(255, 66, 77);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3rem 3.5rem;
+  margin: auto -1rem;
+  min-height: 25rem;
+}
+.CareersMainScreenTwoComp {
+  box-sizing: border-box;
+  padding: 0rem 0rem 0.5rem;
+  margin: 0rem;
+}
+.CareersMainScreenTwoText {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  position: relative;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 1.25;
+  height: 100%;
+}
+.CareersMainScreenTwoTexts {
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-weight: 400;
+  margin: 0.5rem 0rem;
+  font-size: 1.3125rem;
+  line-height: 1.25;
+  height: 100%;
+}
+.CareersMainScreenTwoComponentsTwo {
+  flex-basis: 50%;
+  height: 100%;
+  background-color: transparent;
+}
+.CareersMainScreenTwoComponentsTwoInseide {
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3rem 3.5rem;
+  margin: auto 0rem;
+  min-height: 26.2rem;
+}
+.CareersMainScreenTwoComponentsTwoText {
+  color: rgb(36, 30, 18);
+  margin: 0px;
+  position: relative;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 1.25;
+}
+.CareersMainScreenTwoComponentsTwoComp {
+  box-sizing: border-box;
+  padding: 2rem 0rem 0rem;
+  margin: 0rem;
+}
+.CareersMainScreenTwoComponentsTwohead {
+  color: rgb(255, 66, 77);
+  margin: 0px;
+  position: relative;
+  font-weight: 800;
+  font-family: Walsheim, sans-serif;
+  font-size: 1.825rem;
+  line-height: 1.25;
+}
+.CareersMainScreenTwoComponentsTwoBody {
+  color: rgb(36, 30, 18);
+  margin: 0px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.CareersMainScreenTwoInTwo {
+  align-items: flex-start;
+  place-content: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  padding: 0rem;
+  margin: 0rem -0.5rem;
+}
+.CareersMainScreenTwoComponentsThree {
+  flex-basis: 50%;
+}
+.CareersMainScreenFour {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 0rem;
+  margin: 0rem;
+}
+.CareersMainScreenTwoComponentsTwoInseide {
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3rem 3.5rem;
+  margin: auto 1rem;
+  min-height: 25rem;
+}
+.CareersMainScreenComponentInside {
+  max-width: 1024px;
+  overflow: hidden;
+}
+.CareersMainScreenTwoComponentsThreePhoto {
+  width: 100%;
+  background-image: url(https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2021/04/careers-patreon-logo-design.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 0px;
+  padding-bottom: 350px;
+}
+.CareersMainScreenTwoComponentsFour {
+  flex-basis: 50%;
+}
+.CareersMainScreenTwoComponentsFourInside {
+  background-color: rgb(245, 244, 242);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3rem 3.5rem;
+  margin: auto 1rem;
+  min-height: 25rem;
+}
+.CareersMainScreenTwoComponentsFourInsideOne {
+  box-sizing: border-box;
+  max-width: 640px;
+  padding: 0rem;
+  margin: 0rem;
+}
+.CareersMainScreenTwoComponentsTwoText {
+  color: rgb(36, 30, 18);
+  margin: 0px;
+  position: relative;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 1.25;
+}
+.CareersMainScreenTwoComponentsFourInsideOneText {
+  color: rgb(36, 30, 18);
+  position: relative;
+  font-weight: 400;
+  margin: 0.5rem 0rem;
+  font-size: 1.3125rem;
+  line-height: 1.25;
+}
+.CareersMainScreenTwoComponentsFourInsideOneButtonContainer {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 2.5rem 0rem 0rem;
+}
+.CareersMainScreenTwoComponentsFourInsideOneButton {
+  align-items: center;
+  backface-visibility: hidden;
+  background-color: rgb(255, 66, 77);
+  border-radius: 9999px;
+  border: 1px solid rgb(255, 66, 77);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 500;
+  height: unset;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0.78125rem 1.5rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  white-space: unset;
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
