@@ -28,6 +28,37 @@
   box-shadow: 0 2px 8px rgb(0 0 0 / 16%);
   background-color: #fff;
 }
+.settings {
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  right: -360px;
+  border-radius: 10px;
+  top: 50px;
+  background-color: #fff;
+}
+.settingsheaderClose {
+  color: #272727;
+}
+.settingsbody {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.settingsbody:hover {
+  background-color: rgb(250, 250, 250);
+}
+.settingsheader {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  border-bottom: 1px solid lightgray;
+}
+.fa-bars {
+  display: none;
+}
 .sidebar__header {
   padding: 1.5rem 1.25rem 0;
   display: flex;
@@ -68,14 +99,18 @@
   align-items: center;
 }
 .sidebarIcon {
-  max-height: 1rem;
+  cursor: pointer;
+  height: 1rem;
+}
+.sidebarIcon:hover {
+  height: 1.2rem;
 }
 .sidebarSeperator {
   border-bottom: 1px solid #f2f2f2;
   margin: 0.75rem 0 0;
 }
 .sidebarContainer {
-  overflow: hidden;
+  overflow: auto;
 
   height: 100%;
   padding: 0.75rem 0 6.25rem;
@@ -129,7 +164,10 @@
 .sidebarSearchbar {
   position: absolute;
   width: 80%;
+  background: 1rem 50% no-repeat
+    url("https://image.flaticon.com/icons/png/512/622/622669.png");
   margin: auto !important;
+  background-size: 15px;
   height: 2.5rem;
   border: 1px solid #f2f2f2;
   border-radius: 100px;

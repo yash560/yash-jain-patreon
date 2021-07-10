@@ -16,7 +16,7 @@ function Header() {
               class="logoImage"
             />
           </div>
-          <div class="headerLeftComponent productComponent">
+          {/* <div class="headerLeftComponent productComponent">
             Product<i class="fas fa-chevron-down"></i>
             <div class="productDropdown">
               <div class="productDropdownComponent">
@@ -38,8 +38,8 @@ function Header() {
                 </div>
               </div>
             </div>
-          </div>
-          <div class="headerLeftComponent creatorComponent">
+          </div> */}
+          {/* <div class="headerLeftComponent creatorComponent">
             For creators<i class="fas fa-chevron-down"></i>
             <div class="creatorDropdown">
               <div class="creatorDropdownComponent">
@@ -112,10 +112,10 @@ function Header() {
                 </div>
               </div>
             </div>
-          </div>
-          <div class="headerLeftComponent">Pricing</div>
-          <div class="headerLeftComponent resourcesComponent">
-            Resources<i class="fas fa-chevron-down"></i>
+          </div> */}
+          <div class="headerLeftComponent">Home</div>
+          {/* <div class="headerLeftComponent resourcesComponent">
+            <i class="fas fa-chevron-down"></i>
             <div class="resourcesDropdown">
               <div class="creatorDropdownComponent">
                 <div class="creatorDropdownComponentBody">Blog </div>
@@ -140,18 +140,18 @@ function Header() {
                 </div>
               </div>
             </div>
-          </div>
-          <div class="headerLeftComponent">Starter Kits</div>
+          </div> */}
+          <div class="headerLeftComponent">Community</div>
         </div>
         <div class="headerRight">
-          <input
+          {/* <input
             class="headerSearchbar"
             type="text"
             name="search"
             placeholder="Find a Creator "
-          />
+          /> */}
           <div class="headerRightComponent">Log In</div>
-          <div class="createAccountButton">Create on Patreon</div>
+          <div class="createAccountButton">Join us</div>
         </div>
       </div>{" "}
       <div class="headerSm">

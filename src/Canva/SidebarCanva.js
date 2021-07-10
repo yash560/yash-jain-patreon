@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SidebarCanva.css";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 import PermIdentityOutlinedIcon from "@material-ui/icons/PermIdentityOutlined";
 import AddOutlinedIcon from "@material-ui/icons/AddOutlined";
 function SidebarCanva() {
+  const [settingsOpen, setsettingsOpen] = useState(false);
   return (
     <div>
       <div class="sidebar">
+        {settingsOpen == true ? (
+          <div class="settings">
+            <div class="settingsheader">
+              <span>Your Account</span>
+              <i
+                onClick={() => {
+                  setsettingsOpen(false);
+                }}
+                class="fas settingsheaderClose fa-times"
+              ></i>
+            </div>
+            <div class="settingsbody">Settings</div>
+            <div class="settingsbody">Refferal</div>
+            <div class="settingsbody">Logout</div>
+          </div>
+        ) : (
+          " "
+        )}
         <div class="sidebar__header">
+          <i class="fas fa-bars"></i>
           <div class="sidebarLogo">
             <img
               src="https://images.jumpstart.me/frontend/brand/canvas-logo-combined.svg"
@@ -17,13 +37,33 @@ function SidebarCanva() {
             />
           </div>
           <div class="sidebarIconsDiv">
-            <div class="sidebarIcons">
-              <img
-                class="sidebarIcon"
-                src="https://images.jumpstart.me/frontend/icons/settings.svg"
-                alt=""
-              />
-            </div>
+            {settingsOpen == true ? (
+              <div
+                onClick={() => {
+                  setsettingsOpen(false);
+                }}
+                class="sidebarIcons"
+              >
+                <img
+                  class="sidebarIcon"
+                  src="https://images.jumpstart.me/frontend/icons/settings.svg"
+                  alt=""
+                />
+              </div>
+            ) : (
+              <div
+                onClick={() => {
+                  setsettingsOpen(true);
+                }}
+                class="sidebarIcons"
+              >
+                <img
+                  class="sidebarIcon"
+                  src="https://images.jumpstart.me/frontend/icons/settings.svg"
+                  alt=""
+                />
+              </div>
+            )}
             <div class="sidebarIcons">
               <img
                 class="sidebarIcon"
@@ -33,7 +73,12 @@ function SidebarCanva() {
             </div>
           </div>
         </div>
-        <div class="sidebarContainer">
+        <div
+          onClick={() => {
+            setsettingsOpen(false);
+          }}
+          class="sidebarContainer"
+        >
           <div class="sidebarItemContainer">
             <div class="sidebarItemIcon">
               <HomeOutlinedIcon />
@@ -69,6 +114,66 @@ function SidebarCanva() {
             </div>
             <div class="sidebarItemText">General Advice</div>
           </div>
+          <div class="sidebarItemContainer">
+            <div class="sidebarItemIcon">
+              <img
+                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
+                alt=""
+                height="100%"
+              />
+            </div>
+            <div class="sidebarItemText">Recruiter Announcements</div>
+          </div>
+          <div class="sidebarItemContainer">
+            <div class="sidebarItemIcon">
+              <img
+                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
+                alt=""
+                height="100%"
+              />
+            </div>
+            <div class="sidebarItemText">Recruiter Announcements</div>
+          </div>{" "}
+          <div class="sidebarItemContainer">
+            <div class="sidebarItemIcon">
+              <img
+                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
+                alt=""
+                height="100%"
+              />
+            </div>
+            <div class="sidebarItemText">Recruiter Announcements</div>
+          </div>{" "}
+          <div class="sidebarItemContainer">
+            <div class="sidebarItemIcon">
+              <img
+                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
+                alt=""
+                height="100%"
+              />
+            </div>
+            <div class="sidebarItemText">Recruiter Announcements</div>
+          </div>{" "}
+          <div class="sidebarItemContainer">
+            <div class="sidebarItemIcon">
+              <img
+                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
+                alt=""
+                height="100%"
+              />
+            </div>
+            <div class="sidebarItemText">Recruiter Announcements</div>
+          </div>{" "}
+          <div class="sidebarItemContainer">
+            <div class="sidebarItemIcon">
+              <img
+                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
+                alt=""
+                height="100%"
+              />
+            </div>
+            <div class="sidebarItemText">Recruiter Announcements</div>
+          </div>{" "}
           <div class="sidebarItemContainer">
             <div class="sidebarItemIcon">
               <img

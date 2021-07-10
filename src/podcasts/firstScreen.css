@@ -47,7 +47,7 @@
   width: 100%;
 }
 .getStarted {
-  background-color: #ff424d;
+  background-color: #0e3496;
   padding: 0.75rem 1.5rem;
   color: #fff;
   letter-spacing: 0px;
@@ -83,7 +83,9 @@
     text-align: center;
   }
   .firstScreenComponentBody {
-    text-align: center;
+    text-align: center !important;
+    width: fit-content;
+    margin: 0.5rem auto;
   }
   .Screen {
     width: 100vw;

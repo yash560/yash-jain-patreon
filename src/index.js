@@ -7,7 +7,8 @@ import Pricing from "./Pricing";
 import Home from "./Home/Home";
 import Careers from "./Career/Careers";
 import Canva from "./Canva/Canva";
-
+import AppDirectory from "./App/AppDirectory";
+import Settings from './Settings/Settings'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
@@ -27,6 +28,12 @@ ReactDOM.render(
         </Route>{" "}
         <Route exact path="/Careers">
           <Careers />
+        </Route>{" "}
+        <Route exact path="/AppDirectory">
+          <AppDirectory />
+        </Route>{" "}
+        <Route exact path="/Settings">
+          <Settings />
         </Route>
       </Switch>
     </BrowserRouter>

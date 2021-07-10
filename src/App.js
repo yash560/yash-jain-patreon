@@ -6,6 +6,7 @@ import "./podcasts/fourthScreen.css";
 import "./podcasts/fifthScreen.css";
 import Footer from "./Footer";
 import Header from "./Header";
+import CheckComponet from "./pricing/CheckComponet";
 function App() {
   return (
     <div className="App">
@@ -16,94 +17,40 @@ function App() {
             <img
               height="100%"
               width="100%"
-              src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/podcaster-v3-heathermcdonald.jpg"
+              src="https://ik.imagekit.io/Yash/streamline-icon-beta-testing-1_1000x1000_mCl5sabiE.png"
               alt=""
             />
           </div>
           <div class="firstScreenComponent">
-            <div class="firstScreenComponentHeader">PATREON FOR PODCASTERS</div>
-            <div class="firstScreenComponentBody">
-              Get to know your most loyal listeners and give them a place to
-              connect, build community, and engage more deeply with your show.
-              Deliver exclusive episodes or bonus content, and establish a
-              reliable revenue stream beyond ads.
+            <div class="firstScreenComponentHeader">
+              Where people in academia and industry meet
             </div>
             <div class="firstScreenComponentBody">
-              <div class="getStarted">Get Started</div>
+              Smart conversations never stop
+            </div>
+            <div class="firstScreenComponentBody">
+              <div class="getStarted">Join Us</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="secondScreen">
-        <div class="secondScreenInner">
-          <div class="secondScreenHeader">
-            Why should podcasters use membership?
-          </div>
-          <div class="secondScreenBody">
-            <div class="secondScreenBodyComponent">
-              <div class="secondScreenImage">
-                <div class="secondScreenBodyIcon"></div>
-              </div>
-              <div class="secondScreenComponentBody">
-                <div class="secondScreenBodyComponentHeader">
-                  Make more money
-                </div>
-                <div class="secondScreenBodyComponentBody">
-                  Add another source of income by giving new and exclusive
-                  content to your biggest fans.
-                </div>
-              </div>
-            </div>
-            <div class="secondScreenBodyComponent">
-              <div class="secondScreenImage">
-                <div class="secondScreenBodyIcon"></div>
-              </div>
-              <div class="secondScreenComponentBody">
-                <div class="secondScreenBodyComponentHeader">
-                  Know your community
-                </div>
-                <div class="secondScreenBodyComponentBody">
-                  You own the relationship with your fans and get access to them
-                  directly. We don't stand in the way.
-                </div>
-              </div>
-            </div>
-            <div class="secondScreenBodyComponent">
-              <div class="secondScreenImage">
-                <div class="secondScreenBodyIcon">
-                  <img height="100%" width="100%" alt="" />
-                </div>
-              </div>
-              <div class="secondScreenComponentBody">
-                <div class="secondScreenBodyComponentHeader">
-                  Be independent
-                </div>
-                <div class="secondScreenBodyComponentBody">
-                  Live in a world not reliant on ads or paid sponsorships to
-                  keep your business running.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="thirdScreen">
         <div class="thirdScreenInner">
-          <div class="thirdScreenHeader">Popular features for podcasters </div>
+          <div class="thirdScreenHeader">How it works</div>
           <div class="thirdScreenBody">
             <div class="thirdScreenBodyComponent">
               <div class="thirdScreenBodyIcon">
                 <img
                   class="thirdScreenImage"
                   height="300px"
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/For-podcasters-01_2x.jpg"
+                  src="https://ik.imagekit.io/Yash/streamline-icon-message-sent-2_500x500-1_Z8Rdau1KP.png"
                   alt=""
                 />
               </div>
-              <div class="thirdScreenBodyComponentHeader">Private RSS feed</div>
               <div class="thirdScreenBodyComponentBody">
-                Securely share your early access and bonus episodes with your
-                fans.
+                Select people you want to meet and if they select you back, talk
+                to them straight away.
               </div>
             </div>
             <div class="thirdScreenBodyComponent">
@@ -111,15 +58,14 @@ function App() {
                 <img
                   height="300px"
                   class="thirdScreenImage"
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/For-podcasters-02_2x.jpg"
+                  src="https://ik.imagekit.io/Yash/streamline-icon-facetime-meeting-1_500x500-1_HurIMyF7T.png"
                   alt=""
                 />
               </div>
-              <div class="thirdScreenBodyComponentHeader">
-                Management of benefits
-              </div>
+
               <div class="thirdScreenBodyComponentBody">
-                Easily track and fulfill membership benefits quickly.
+                Get a personalised 1:1 introduction to someone relevant twice a
+                month.
               </div>
             </div>
             <div class="thirdScreenBodyComponent">
@@ -127,148 +73,172 @@ function App() {
                 <img
                   class="thirdScreenImage"
                   height="300px"
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/For-podcasters-03_2x.jpg"
+                  src="https://ik.imagekit.io/Yash/streamline-icon-people-1_500x500-1_p0ozPHVJj.png"
                   alt=""
                 />
               </div>
-              <div class="thirdScreenBodyComponentHeader">
-                Community & messaging
-              </div>
+
               <div class="thirdScreenBodyComponentBody">
-                Tools to message and engage with your members.
+                Join Rooms where you meet with a group of people sharing the
+                same passion.
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="fourthScreen">
-        <div class="fourthScreenInner">
-          <div class="fourthScreenHeader">Notable podcasters on Patreon </div>
-          <div class="fourthScreenBody">
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://c10.patreonusercontent.com/3/eyJ3IjoyMDB9/patreon-media/p/campaign/1766401/e034374751e44b7f93cbebd6b166ca7b/1.jpg?token-time=2145916800&token-hash=pYUFyaH3tsnslDhIytknMa7_PLN9UtwBzUrXqRk3C0g%3D"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">
-                Welcome to Night Vale
-              </div>
+      <div class="pricingThirdScreen">
+        <div class="pricingThirdScreenHeader">
+          Join over 15,000 members bridging the gap between academia and
+          industry
+        </div>
+        <div class="pricingThirdScreenInside">
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader">
+              Sylvie, PhD in Chemical Engineering
             </div>
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://c10.patreonusercontent.com/3/eyJ3IjoyMDB9/patreon-media/p/campaign/2369690/d82e14884819467cb6d881961b4185f3/6.png?token-time=2145916800&token-hash=-8Z1k2SOuUmlsKvrLtjvmyy9nPvnH9FQ9mBC4dEYOlA%3D"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">
-                Dungeons and Daddles
-              </div>
+            <div class="pricingThirdScreenComponentBody">
+              Sylvie was in the final year of her PhD researching and developing
+              novel green solutions to energy production. She joined Smart Tribe
+              to build up her network with professionals in the energy sector.
             </div>
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://c10.patreonusercontent.com/3/eyJ3IjoyMDB9/patreon-media/p/campaign/225959/a356c84c8db040a0a0d974d8c20fe8ee/1.jpeg?token-time=2145916800&token-hash=MGBN7rmh9nxdwLoqjeaI6ybGq2-Eew0mt3nbKyLbIdk%3D"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">DeadEndHipHop </div>
+          </div>
+          <div class=" pricingThirdScreenComponentOperator">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader">
+              Chin, Manager in energy company
             </div>
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://c10.patreonusercontent.com/3/eyJ3IjoyMDB9/patreon-media/p/campaign/2023945/07ab04bfc6b84f43b5e134d4882f2f51/1.jpg?token-time=2145916800&token-hash=ePXDfoB8ebQJDiK34qLsH22hwiugSjYKzlmOO_-cht0%3D"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">
-                2 Back Girls, 1 Rose
-              </div>
+            <div class="pricingThirdScreenComponentBody">
+              Chin joined Smart Tribe to make connections with researchers
+              working on novel green energy. After a few video calls, Sylvie and
+              Chin set up an interview for her at his company and she was
+              offered a job.
             </div>
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/For-podcasters-01_2x.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">
-                Crime Junkie Podcast
-              </div>
+          </div>
+          <div class=" pricingThirdScreenComponentOperator">
+            <i class="fas fa-equals"></i>
+          </div>
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader pricingThirdScreenComponentHeaderEqual">
+              Job
             </div>
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/For-podcasters-02_2x.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">Snap Judgement </div>
+          </div>
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader">
+              Anja, expert in Smart Materials
             </div>
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/For-podcasters-03_2x.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">
-                Mueller, She Wrote & The <br />
-                Daily Beans
-              </div>
+            <div class="pricingThirdScreenComponentBody">
+              Anja is full of ideas for how state-of-the-art breakthroughs in
+              Smart Materials can be applied in industry. After Smart Tribe
+              introduced her to Paul, she agreed to give expert consulting to
+              his company.
             </div>
-            <div class="fourthScreenBodyComponent">
-              <div class="fourthScreenBodyIcon">
-                <img
-                  class="fourthScreenImage"
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/For-podcasters-03_2x.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="fourthScreenBodyComponentHeader">Amir and Jake </div>
+          </div>
+          <div class=" pricingThirdScreenComponentOperator">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader">
+              Paul, R&D semi-conductor company
+            </div>
+            <div class="pricingThirdScreenComponentBody">
+              Paul worked in R&D for a semi-conductor company who had a
+              challenge to reduce their production costs. He joined Smart Tribe
+              to make connections with academics who may have new perspectives
+              on the problem.
+            </div>
+          </div>
+          <div class=" pricingThirdScreenComponentOperator">
+            <i class="fas fa-equals"></i>
+          </div>
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader pricingThirdScreenComponentHeaderEqual">
+              New Tech
             </div>
           </div>
         </div>
       </div>
-      <div class="fifthScreen">
-        <div class="fifthScreenInner">
-          <div class="fifthScreenBody">
-            <div class="fifthScreenBodyLeft">
-              <div class="fifthScreenPeople">
-                <img
-                  src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/podcaster-heather-testimonial_2x.png"
-                  alt=""
-                  height="100%"
-                  width="100%"
-                />
-              </div>
-              <div class="fifthScreenPeopleName">
-                Heather
-                <br /> MCDonald
-              </div>
-              <div class="fifthScreenPeopleInfo">Juicy Scoop Podcast</div>
+
+      <div class="PricingfirstScreen">
+        <div class="PricingfirstScreenInside">
+          <div class="PricingfirstScreenText">
+            <div class="PricingfirstScreenHeader">
+              Great things come from Smart Connections
             </div>
-            <div class="fifthScreenBodyRight">
-              "With Patreon, it's not about likes and views, you can really
-              connect with your fans, ignore the haters and focus on the
-              positive. I'd rather have 300 patrons than 3 million Instagram
-              followers."
+            <div class="PricingfirstScreenBody">
+              On Science2Innovation, both worlds of academia and industry, can
+              finally come together in collaboration to help provide solutions
+              to one another’s crucial problems while breaking down silos.
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="planCardFeatures">
+              <div class="card">
+                <div class="planCardFirstText">
+                  <div class="planCardHeader">Features </div>
+                </div>
+                <div class="planCardFourthText">
+                  <CheckComponet text="Browse members profiles" />
+                  <CheckComponet text="Instant messaging (no of people once selected back)" />
+                  <CheckComponet text="Room hosting" />
+                  <CheckComponet text="Personalised introductions per round" />
+                  <CheckComponet text="Browsing members by their goals" />
+                  <CheckComponet text="See who chose you for an introduction" />
+                  <CheckComponet text="Room access" />
+                  <CheckComponet text="Choose my introductions" />
+                  <CheckComponet text="Priority introduction to popular members" />
+                  <CheckComponet text="Have 100x more profile views" />
+                </div>
+              </div>
+            </div>
+            <div class=" planCard ">
+              <div class="card">
+                <div class="planCardFirstText">
+                  <div class="planCardHeader">Freemiuim </div>
+                </div>
+                <div class="planCardFourthText">
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="10" />
+                  <CheckComponet iconC="fas fa-check" text="1" />
+                  <CheckComponet iconC="fas fa-check" text="1" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-times" text="No" />
+                  <CheckComponet iconC="fas fa-times" text="No" />
+                  <CheckComponet iconC="fas fa-times" text="No" />
+                </div>
+                <div class="recommendedButton">Coming Soon</div>
+              </div>
+            </div>
+            <div class="planCard">
+              <div class="card">
+                <div class="planCardFirstText">
+                  <div class="planCardHeader">Premium </div>
+                </div>
+                <div class="planCardFourthText">
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="2" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                </div>
+                <div class="planCardButtons">Coming Soon</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="sixthScreen">
         <div class="thirdScreenHeader">
-          Ready to build your membership business?
+          Feeling like doing something impactful? <br />
+          Join Science2Innovation
         </div>
         <div class="getStarted buttonScreensSixth">Get Started</div>
       </div>

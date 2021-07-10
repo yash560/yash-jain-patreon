@@ -12,6 +12,7 @@ function HeaderBarCanva() {
           <div class="HeaderBarItem">
             <DateRangeIcon fontSize="small" />
             <span class="HeaderBarItemtext">Events</span> <ArrowDropDownIcon />
+            <div class="EventDropdown"></div>
           </div>
           <div class="HeaderBarItem">
             <span class="HeaderBarItemtext">Location</span>

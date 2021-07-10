@@ -4,11 +4,15 @@
   box-sizing: border-box;
   font-family: Inter;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .fas {
   cursor: pointer;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,7 +25,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-} */
+}
 body,
 html {
   overflow-x: hidden;

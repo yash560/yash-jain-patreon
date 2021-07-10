@@ -1,0 +1,68 @@
+/* @media (max-width: 1200px) {
+  .card,
+  .HeaderBarCanva,
+  .input {
+    margin-left: 3.7rem;
+  }
+  .HeaderBarCanva {
+    padding-right: 1rem;
+    width: 75%;
+  }
+} */
+@media (max-width: 1200px) {
+  .sidebarContainer {
+    overflow: hidden;
+
+    height: 10%;
+    padding: 0.75rem 0 6.25rem;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .sidebar {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+  }
+  .sidebarItemContainer,
+  .sidebarSectionHeaderText,
+  .sidebarJoinButton {
+    display: none;
+  }
+  .mainCanva,
+  .SettingsDivision,
+  .mainCanvaSettings {
+    width: 100% !important;
+    margin: auto;
+  }
+  .settingsHeader {
+    margin-top: 5rem;
+  }
+  .card,
+  .input {
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+  .input {
+    margin-top: 2rem;
+  }
+  .HeaderBarCanva {
+    padding-right: 1rem;
+    width: 100%;
+    position: sticky;
+    margin: 5rem auto 0 auto;
+  }
+  .HeaderBarCanvaLeft {
+    margin-left: 0.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .CardsContainer {
+    grid-template: auto/repeat(2, 1fr) [end];
+  }
+}
+@media (max-width: 549px) {
+  .CardsContainer {
+    grid-template: auto/repeat(1, 1fr) [end];
+  }
+}

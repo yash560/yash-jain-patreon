@@ -1,0 +1,54 @@
+.mainCanvaSettings {
+  background: #fafafa;
+  color: #0e0e0e;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+}
+.settingsHeader {
+  background-color: #fff;
+  padding: 2.75rem 1.25rem 1.5rem 1.25rem;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 125%;
+  font-weight: 500;
+}
+.SettingsDivision {
+  background: #fff;
+  color: #0e0e0e;
+  display: flex;
+  min-height: 100vh;
+  border-radius: 12px;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  width: 93%;
+  margin: 1rem auto;
+}
+.SettingsDivisionComponent {
+  padding: 2.5rem;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.SettingsDivisionComponentQ {
+  color: #0e0e0e;
+  font-weight: 600;
+  width: 25%;
+}
+.SettingsDivisionComponentA {
+  width: 70%;
+  color: #383838;
+}
+.SettingsDivisionComponentEdit {
+  width: 5%;
+  cursor: pointer;
+  color: #006afe;
+}

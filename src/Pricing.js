@@ -28,15 +28,15 @@ function Pricing() {
             </div>
           </div>
           <div class="cardContainer">
-            <div class="planCard">
+            <div class="planCardFeatures">
               <div class="card">
                 <div class="planCardFirstText">
-                  <div class="planCardHeader">Lite </div>
-                  <div class="planCardBody">
+                  <div class="planCardHeader">Features </div>
+                  {/* <div class="planCardBody">
                     Simple tools to set up recurring support from your fans.
-                  </div>
+                  </div> */}
                 </div>
-                <div class="planCardSecondText">
+                {/* <div class="planCardSecondText">
                   <div class="planCardSecondHeader">5% </div>
                   <div class="planCardSecondBody">
                     of the monthly income you earn on Patreon
@@ -44,26 +44,67 @@ function Pricing() {
                 </div>
                 <div class="planCardThirdText">
                   <div class="planCardThirdBody">Plus payment processing</div>
-                </div>
+                </div> */}
                 <div class="planCardFourthText">
-                  <CheckComponet text="Hosted creator page" />
+                  <CheckComponet
+                    text="Browse members profiles
+"
+                  />
+                  <CheckComponet
+                    text="Instant messaging (no of people once selected back)
+"
+                  />
+                  <CheckComponet
+                    text="Room hosting
+"
+                  />
+                  <CheckComponet
+                    text="Personalised introductions per round
+"
+                  />
+                  <CheckComponet
+                    text="Browsing members by their goals
+"
+                  />
+                  <CheckComponet
+                    text="See who chose you for an introduction
+"
+                  />{" "}
+                  <CheckComponet
+                    text="Room access
+"
+                  />
+                  <CheckComponet
+                    text="Choose my introductions
+"
+                  />
+                  <CheckComponet
+                    text="Priority introduction to popular members
+"
+                  />
+                  <CheckComponet
+                    text="Have 100x more profile views
+"
+                  />
+                  {/* <CheckComponet text="Hosted creator page" />
                   <CheckComponet text="Patron communication tools" />
-                  <CheckComponet text="Patreon workshops" />
+                  <CheckComponet text="Patreon workshops" /> */}
                 </div>
                 <div class="planCardButtons">Get started</div>
                 <div class="learnMore">Learn more</div>
               </div>
             </div>
-            <div class=" recommendedPlanCard ">
-              <div class="planCardFirstText">
-                <div class="planCardHeader">Pro </div>
-                <div class="planCardBody">
+            <div class=" planCard ">
+              <div class="card">
+                <div class="planCardFirstText">
+                  <div class="planCardHeader">Freemiuim </div>
+                  {/* <div class="planCardBody">
                   Everything you need to build a thriving membership business
                   that provides meaningful income for you and a rewarding
                   experience for your biggest fans.
+                </div> */}
                 </div>
-              </div>
-              <div class="planCardSecondText">
+                {/* <div class="planCardSecondText">
                 <div class="planCardSecondHeader">8% </div>
                 <div class="planCardSecondBody">
                   of the monthly income you earn on Patreon
@@ -71,31 +112,35 @@ function Pricing() {
               </div>
               <div class="planCardThirdText">
                 <div class="planCardThirdBody">Plus payment processing</div>
+              </div> */}
+                <div class="planCardFourthText">
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="10" />
+                  <CheckComponet iconC="fas fa-check" text="1" />
+                  <CheckComponet iconC="fas fa-check" text="1" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />{" "}
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-times" text="No" />
+                  <CheckComponet iconC="fas fa-times" text="No" />
+                  <CheckComponet iconC="fas fa-times" text="No" />
+                </div>
+                <div class="recommendedButton">Get started</div>
+                <div class="learnMore">Learn more</div>
               </div>
-              <div class="planCardFourthText">
-                <CheckComponet text="Everything in Lite and..." />
-                <CheckComponet text="Membership tiers" />
-                <CheckComponet text="Analytics and insights" />
-                <CheckComponet text="Special Offers promo tool" />
-                <CheckComponet text="Creator-led workshops" />
-                <CheckComponet text="Unlimited app integrations" />{" "}
-                <CheckComponet text="Priority customer support" />
-              </div>
-              <div class="recommendedButton">Get started</div>
-              <div class="learnMore">Learn more</div>
             </div>
             <div class="planCard">
               {" "}
               <div class="card">
                 <div class="planCardFirstText">
                   <div class="planCardHeader">Premium </div>
-                  <div class="planCardBody">
+                  {/* <div class="planCardBody">
                     Dedicated coaching and support for established creators and
                     creative businesses, plus premium features that save time
                     and reward your patrons.
-                  </div>
+                  </div> */}
                 </div>
-                <div class="planCardSecondText">
+                {/* <div class="planCardSecondText">
                   <div class="planCardSecondHeader">12% </div>
                   <div class="planCardSecondBody">
                     of the monthly income you earn on Patreon
@@ -103,12 +148,18 @@ function Pricing() {
                 </div>
                 <div class="planCardThirdText">
                   <div class="planCardThirdBody">Plus payment processing</div>
-                </div>
+                </div> */}
                 <div class="planCardFourthText">
-                  <CheckComponet text="Everything in Pro and..." />
-                  <CheckComponet text="Dedicated Partner Manager" />
-                  <CheckComponet text="Merch for Membership" />
-                  <CheckComponet text="Team Accounts" />
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="Unlimited" />
+                  <CheckComponet iconC="fas fa-check" text="2" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />{" "}
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
+                  <CheckComponet iconC="fas fa-check" text="Yes" />
                 </div>
                 <div class="planCardButtons">Get started</div>
                 <div class="learnMore">Learn more</div>
@@ -132,7 +183,7 @@ function Pricing() {
           <div class="secondColummnDiv">
             <div class="secondScreenColumns">
               <div class="secondScreenColumnsComponent">
-                <i class="fas secondCheck fa-check"></i>
+                <i class="fas secondCheck fas fa-check"></i>
                 <div class="secondScreenLeftColumn">
                   <div class="secondScreenLeftColumnInside">
                     <span class="secondScreenLeftColumnInsideHeader">
@@ -146,7 +197,7 @@ function Pricing() {
                 </div>
               </div>
               <div class="secondScreenColumnsComponent">
-                <i class="fas secondCheck fa-check"></i>
+                <i class="fas secondCheck fas fa-check"></i>
                 <div class="secondScreenLeftColumn">
                   <div class="secondScreenLeftColumnInside">
                     <span class="secondScreenLeftColumnInsideHeader">
@@ -160,7 +211,7 @@ function Pricing() {
                 </div>
               </div>
               <div class="secondScreenColumnsComponent">
-                <i class="fas secondCheck fa-check"></i>
+                <i class="fas secondCheck fas fa-check"></i>
                 <div class="secondScreenLeftColumn">
                   <div class="secondScreenLeftColumnInside">
                     <span class="secondScreenLeftColumnInsideHeader">
@@ -176,7 +227,7 @@ function Pricing() {
             </div>
             <div class="secondScreenColumns">
               <div class="secondScreenColumnsComponent">
-                <i class="fas secondCheck fa-check"></i>
+                <i class="fas secondCheck fas fa-check"></i>
                 <div class="secondScreenLeftColumn">
                   <div class="secondScreenLeftColumnInside">
                     <span class="secondScreenLeftColumnInsideHeader">
@@ -260,51 +311,68 @@ function Pricing() {
         <div class="pricingThirdScreenInside">
           <div class="pricingThirdScreenComponent">
             <div class="pricingThirdScreenComponentHeader">
-              Direct relationships
+              Sylvie, PhD in Chemical Engineering
             </div>
             <div class="pricingThirdScreenComponentBody">
-              Develop relationships with your patrons through patron-only posts,
-              messages, or directly via email.
+              Sylvie was in the final year of her PhD researching and developing
+              novel green solutions to energy production. She joined Smart Tribe
+              to build up her network with professionals in the energy sector.
             </div>
           </div>
-          <div class="pricingThirdScreenComponent">
-            <div class="pricingThirdScreenComponentHeader">Business tools</div>
-            <div class="pricingThirdScreenComponentBody">
-              Track patron payments, lifetime value, and notes to help manage
-              relationships with them directly.
-            </div>
-          </div>
+          <i class="fas fa-plus"></i>
           <div class="pricingThirdScreenComponent">
             <div class="pricingThirdScreenComponentHeader">
-              Flexible payouts
+              Chin, Manager in energy company
             </div>
             <div class="pricingThirdScreenComponentBody">
+              Chin joined Smart Tribe to make connections with researchers
+              working on novel green energy. After a few video calls, Sylvie and
+              Chin set up an interview for her at his company and she was
+              offered a job.
+            </div>
+          </div>{" "}
+          <i class="fas fa-equals"></i>
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader pricingThirdScreenComponentHeaderEqual">
+              Job{" "}
+            </div>
+            {/* <div class="pricingThirdScreenComponentBody">
               Pay yourself whenever you want, or receive monthly auto payouts
               from your creator balance via direct deposit, PayPal, or Payoneer.
-            </div>
-          </div>
-          <div class="pricingThirdScreenComponent">
-            <div class="pricingThirdScreenComponentHeader">Patron support</div>
-            <div class="pricingThirdScreenComponentBody">
-              Rest easy knowing we handle your patrons’ questions, payments, and
-              concerns to ensure they’re taken care of.
-            </div>
+            </div> */}
           </div>
           <div class="pricingThirdScreenComponent">
             <div class="pricingThirdScreenComponentHeader">
-              Creator-first education
+              Anja, expert in Smart Materials
             </div>
             <div class="pricingThirdScreenComponentBody">
-              Learn how to effectively run your creative business with our
-              workshops, world-class knowledge base, and creator resources.
+              Anja is full of ideas for how state-of-the-art breakthroughs in
+              Smart Materials can be applied in industry. After Smart Tribe
+              introduced her to Paul, she agreed to give expert consulting to
+              his company.
             </div>
-          </div>
+          </div>{" "}
+          <i class="fas fa-plus"></i>
           <div class="pricingThirdScreenComponent">
-            <div class="pricingThirdScreenComponentHeader">Mobile app</div>
+            <div class="pricingThirdScreenComponentHeader">
+              Paul, R&D semi-conductor company
+            </div>
             <div class="pricingThirdScreenComponentBody">
+              Paul worked in R&D for a semi-conductor company who had a
+              challenge to reduce their production costs. He joined Smart Tribe
+              to make connections with academics who may have new perspectives
+              on the problem.
+            </div>
+          </div>{" "}
+          <i class="fas fa-equals"></i>
+          <div class="pricingThirdScreenComponent">
+            <div class="pricingThirdScreenComponentHeader pricingThirdScreenComponentHeaderEqual">
+              New Tech
+            </div>
+            {/* <div class="pricingThirdScreenComponentBody">
               Message your patrons and monitor your membership business with our
               native iOS and Android apps.
-            </div>
+            </div> */}
           </div>
         </div>
         <div class="screenDivision"></div>
@@ -458,7 +526,8 @@ function Pricing() {
       </div>
       <div class="sixthScreen pricingsixthScreen">
         <div class="thirdScreenHeader sixthScreenHeader ">
-          Join 200,000+ creators changing the way their art is valued
+          48% of Smart Tribe's industry experts are employed by these top
+          companies
         </div>
         <div class="getStarted buttonScreensSixth">Get Started</div>
       </div>

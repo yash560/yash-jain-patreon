@@ -8,7 +8,6 @@ function Footer() {
         <div class="footerInside">
           <div class="footerLeft">
             <div class="footerComponent footerComponentLeft">
-              {" "}
               <div class="footerComponentLeftStart">
                 <div class="footerLogo">
                   <img
@@ -17,15 +16,10 @@ function Footer() {
                     alt=""
                   />
                 </div>{" "}
-                <div class="footerOutlinedButtons bold">Language : English</div>{" "}
-                <div class="footerOutlinedButtons">India</div>
-                <div class="footerOutlinedButtons">Currency : USD</div>
-              </div>{" "}
-              <div class="footerComponentLeftStart">
                 <div class="footerIcons">
                   <div class="socialButtons">
                     <i class="fab fa-facebook-f"></i>
-                  </div>{" "}
+                  </div>
                   <div class="socialButtons">
                     <i class="fab fa-twitter"></i>
                   </div>
@@ -36,69 +30,29 @@ function Footer() {
                     <i class="fab fa-youtube"></i>
                   </div>
                 </div>{" "}
-                <div class="trademark">
-                  <span>© Patreon</span>
-                  <span>Sitemap</span>
-                </div>
-                <div class="address">
-                  600 Townsend Street, Suite 500 San Francisco, CA 94103
-                  <br /> USA <span>Phone: +1 (833) 972-8766</span>
-                </div>
+                <div class="address">Copyright © 2021 Science2Innovation</div>
+                <div class="footerOutlinedButtons bold">Language : English</div>
+                <div class="footerOutlinedButtons">India</div>
+                <div class="footerOutlinedButtons">Currency : USD</div>
               </div>
-            </div>{" "}
+            </div>
           </div>
           <div class="footerRight">
             <div class="footerComponent footerComponentRight">
-              <div
-                class="footerComponentInner
-              "
-              >
-                <div class="footerComponetHeader bold">PRODUCT</div>{" "}
-                <div class="footerComponetBody">Lite</div>
-                <div class="footerComponetBody">Pro</div>
-                <div class="footerComponetBody">Premium</div>
-                <div class="footerComponetBody">Pricing</div>
+              <div class="footerComponentInner">
+                <div class="footerComponetHeader bold">PRODUCT</div>
+                <div class="footerComponetBody">Terms of Use</div>
+                <div class="footerComponetBody">Refer a friend FAQs</div>
+                <div class="footerComponetBody">Premium Services Terms</div>
+                <div class="footerComponetBody">Cookie Policy</div>
               </div>
-            </div>{" "}
+            </div>
             <div class="footerComponent footerComponentRight">
               <div
                 class="footerComponentInner
               "
               >
-                <div class="footerComponetHeader bold">For Creators</div>{" "}
-                <div class="footerComponetBody">Podcasters</div>
-                <div class="footerComponetBody">Video Creators</div>
-                <div class="footerComponetBody">Musicians</div>
-                <div class="footerComponetBody">Visual Artists</div>
-                <div class="footerComponetBody">Writers & Journalists</div>
-                <div class="footerComponetBody">Communities</div>
-                <div class="footerComponetBody">gaming creators</div>
-                <div class="footerComponetBody">nonprofits</div>
-                <div class="footerComponetBody">turorials and Education</div>
-                <div class="footerComponetBody">local businesses</div>
-                <div class="footerComponetBody">Creators-Of-All-Kinds</div>
-                <div class="footerComponetBody">Pricing</div>
-              </div>
-            </div>{" "}
-            <div class="footerComponent footerComponentRight">
-              <div
-                class="footerComponentInner
-              "
-              >
-                <div class="footerComponetHeader bold">Resources</div>{" "}
-                <div class="footerComponetBody">Bog</div>
-                <div class="footerComponetBody">Patreon U</div>
-                <div class="footerComponetBody">Help Center & Faq</div>
-                <div class="footerComponetBody">App Directory</div>{" "}
-                <div class="footerComponetBody">Developers</div>
-              </div>
-            </div>{" "}
-            <div class="footerComponent footerComponentRight">
-              <div
-                class="footerComponentInner
-              "
-              >
-                <div class="footerComponetHeader bold">Company</div>{" "}
+                <div class="footerComponetHeader bold">Company</div>
                 <div class="footerComponetBody">About</div>
                 <div class="footerComponetBody">Press</div>
                 <div class="footerComponetBody">Careers</div>

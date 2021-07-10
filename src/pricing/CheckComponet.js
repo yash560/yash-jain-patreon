@@ -1,10 +1,10 @@
 import React from "react";
 
-function CheckComponet({ text }) {
+function CheckComponet({ text ,iconC}) {
   return (
     <div>
       <div class="checkComponent">
-        <i class="fas fa-check"></i>
+        <i class={iconC}></i>
         <span class="checkComponentText">{text} </span>
       </div>
     </div>
