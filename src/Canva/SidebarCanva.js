@@ -4,8 +4,10 @@ import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 import PermIdentityOutlinedIcon from "@material-ui/icons/PermIdentityOutlined";
 import AddOutlinedIcon from "@material-ui/icons/AddOutlined";
+import { Link, useHistory } from "react-router-dom";
 function SidebarCanva() {
   const [settingsOpen, setsettingsOpen] = useState(false);
+  const history = useHistory();
   return (
     <div>
       <div class="sidebar">
@@ -79,24 +81,57 @@ function SidebarCanva() {
           }}
           class="sidebarContainer"
         >
-          <div class="sidebarItemContainer">
+          <div
+            class={
+              window.location.pathname == ""
+                ? "sidebarItemContainerSelected"
+                : "sidebarItemContainer"
+            }
+          >
             <div class="sidebarItemIcon">
               <HomeOutlinedIcon />
             </div>
             <div class="sidebarItemText">Home</div>
           </div>
-          <div class="sidebarItemContainer">
+          <Link
+            to="/Jobs"
+            class={
+              window.location.pathname == "/Jobs"
+                ? "sidebarItemContainerSelected"
+                : "sidebarItemContainer"
+            }
+          >
             <div class="sidebarItemIcon">
               <ExploreOutlinedIcon />
             </div>
-            <div class="sidebarItemText">Hobs & Events</div>
-          </div>
-          <div class="sidebarItemContainer">
+            <div class="sidebarItemText">Jobs & Events</div>
+          </Link>
+          <Link
+            to="/Profile"
+            class={
+              window.location.pathname == "/Profile"
+                ? "sidebarItemContainerSelected"
+                : "sidebarItemContainer"
+            }
+          >
             <div class="sidebarItemIcon">
               <PermIdentityOutlinedIcon />
             </div>
-            <div class="sidebarItemText">User name</div>
-          </div>
+            <div class="sidebarItemText">My Profile</div>
+          </Link>{" "}
+          <Link
+            to="/Modal"
+            class={
+              window.location.pathname == "/Modal"
+                ? "sidebarItemContainerSelected"
+                : "sidebarItemContainer"
+            }
+          >
+            <div class="sidebarItemIcon">
+              <PermIdentityOutlinedIcon />
+            </div>
+            <div class="sidebarItemText">Hiring</div>
+          </Link>
           <div class="sidebarSectionHeader">
             <div class="sidebarSectionHeaderText">Communities (3)</div>
             <div class="sidebarJoinButton">
@@ -114,66 +149,6 @@ function SidebarCanva() {
             </div>
             <div class="sidebarItemText">General Advice</div>
           </div>
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
-              <img
-                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
-                alt=""
-                height="100%"
-              />
-            </div>
-            <div class="sidebarItemText">Recruiter Announcements</div>
-          </div>
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
-              <img
-                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
-                alt=""
-                height="100%"
-              />
-            </div>
-            <div class="sidebarItemText">Recruiter Announcements</div>
-          </div>{" "}
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
-              <img
-                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
-                alt=""
-                height="100%"
-              />
-            </div>
-            <div class="sidebarItemText">Recruiter Announcements</div>
-          </div>{" "}
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
-              <img
-                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
-                alt=""
-                height="100%"
-              />
-            </div>
-            <div class="sidebarItemText">Recruiter Announcements</div>
-          </div>{" "}
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
-              <img
-                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
-                alt=""
-                height="100%"
-              />
-            </div>
-            <div class="sidebarItemText">Recruiter Announcements</div>
-          </div>{" "}
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
-              <img
-                src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
-                alt=""
-                height="100%"
-              />
-            </div>
-            <div class="sidebarItemText">Recruiter Announcements</div>
-          </div>{" "}
           <div class="sidebarItemContainer">
             <div class="sidebarItemIcon">
               <img

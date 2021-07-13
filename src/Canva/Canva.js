@@ -4,16 +4,15 @@ import SidebarCanva from "./SidebarCanva";
 import "./mainCanva.css";
 import CanvaCard from "./CanvaCard";
 import CanvaCatagoriesCard from "./CanvaCatagoriesCard";
-
 import Skeleton from "react-loading-skeleton";
 import "./CanvaQuerry.css";
 
-function Canva() {
+function Jobs() {
   return (
     <div>
       <SidebarCanva />
       <HeaderBarCanva />
-      <div class="mainCanva">
+      <div class="mainCanva dash-container">
         <input
           class="input"
           type="text"
@@ -56,4 +55,4 @@ function Canva() {
   );
 }
 
-export default Canva;
+export default Jobs;

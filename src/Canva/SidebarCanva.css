@@ -115,18 +115,40 @@
   height: 100%;
   padding: 0.75rem 0 6.25rem;
 }
-.sidebarItemContainer {
+.sidebarItemContainerSelected {
   position: relative;
+  background-color: rgb(253, 243, 243);
   min-width: 17.5rem;
+  border-left: 5px solid black;
   min-height: 3rem;
   padding: 0 1.5rem;
   color: #0e0e0e;
+  font-weight: 400;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
+.sidebarItemContainer {
+  font-weight: 400; 
+  position: relative;
+  min-width: 17.5rem;
+  min-height: 3rem;
+  padding: 0 1.5rem;
+  color: #0e0e0e !important;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebarItemContainer:hover,
+.sidebarItemContainerSelected:hover {
+  color: #0e0e0e !important;
+}
 .sidebarItemText {
+  color: #000;
   font-size: 0.875rem;
   line-height: 130%;
 }
