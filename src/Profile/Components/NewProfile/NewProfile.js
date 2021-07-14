@@ -865,7 +865,7 @@ export const NewProfile = ({ user, setUserData }) => {
                             {user.major}, {user.degree}
                           </p>
                           <button
-                            class="btn"
+                            class="AddButton"
                             onClick={openEditProfileModal}
                             style={{ marginTop: "7px" }}
                           >
@@ -895,7 +895,7 @@ export const NewProfile = ({ user, setUserData }) => {
                             Stand out to recruiters by adding your past and
                             upcoming experiences
                           </p>
-                          <button class="btn" onClick={openAddExpiModal}>
+                          <button class="AddButton" onClick={openAddExpiModal}>
                             Add Experience
                           </button>
                         </div>
@@ -993,7 +993,7 @@ export const NewProfile = ({ user, setUserData }) => {
                           onChange={onFileChange}
                         />
                         <button
-                          class="btn"
+                          class="AddButton"
                           onClick={(e) => {
                             // fileInput.current && fileInput.current.click();
                             // onFileUpload();
@@ -1143,7 +1143,7 @@ export const NewProfile = ({ user, setUserData }) => {
                         Get noticed by recruitments. Add things like hackathons
                         and classes you’ve TA’d.
                       </p>
-                      <button class="btn btn-badge" onClick={openExpiIdModal}>
+                      <button class="AddButton btn-badge" onClick={openExpiIdModal}>
                         Add ID Card
                       </button>
                     </div>

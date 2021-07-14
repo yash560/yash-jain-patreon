@@ -18,6 +18,7 @@ function Hiring() {
       <div className="left-sidebar-container">
         <SidebarCanva />
       </div>
+      <div class="side-container"></div>
     </div>
   );
 }

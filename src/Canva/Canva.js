@@ -34,7 +34,6 @@ function Jobs() {
               CompanyBackground="https://image.freepik.com/free-vector/memphis-pattern-background_53876-89956.jpg"
             /> */}
             <CanvaCard />
-            <CanvaCard />
             <CanvaCard /> <CanvaCard />
             <CanvaCard />
             <CanvaCard />

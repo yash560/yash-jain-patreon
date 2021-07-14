@@ -39,7 +39,7 @@ function CanvaCard({
             </div>
             <div class="canvaBodyCardHeader">{EventName} </div>
             <div class="canvaBodyCardBody">{EventSubText} </div>
-
+{/* 
             <div class="canvaBodyCardFooterIcon">
               <div
                 onClick={(e) => {
@@ -57,7 +57,7 @@ function CanvaCard({
               <div class="canvaBodyCardBody2">
                 {vote == true ? 1 : 0} Interested
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       ) : (

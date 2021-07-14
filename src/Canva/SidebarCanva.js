@@ -22,7 +22,14 @@ function SidebarCanva() {
                 class="fas settingsheaderClose fa-times"
               ></i>
             </div>
-            <div class="settingsbody">Settings</div>
+            <div
+              onClick={(e) => {
+                history.push("/Settings");
+              }}
+              class="settingsbody"
+            >
+              Settings
+            </div>
             <div class="settingsbody">Refferal</div>
             <div class="settingsbody">Logout</div>
           </div>
@@ -81,9 +88,10 @@ function SidebarCanva() {
           }}
           class="sidebarContainer"
         >
-          <div
+          <Link
+            to="/homes"
             class={
-              window.location.pathname == ""
+              window.location.pathname == "/homes"
                 ? "sidebarItemContainerSelected"
                 : "sidebarItemContainer"
             }
@@ -92,7 +100,7 @@ function SidebarCanva() {
               <HomeOutlinedIcon />
             </div>
             <div class="sidebarItemText">Home</div>
-          </div>
+          </Link>
           <Link
             to="/Jobs"
             class={
@@ -107,6 +115,19 @@ function SidebarCanva() {
             <div class="sidebarItemText">Jobs & Events</div>
           </Link>
           <Link
+            to="/Hiring"
+            class={
+              window.location.pathname == "/Hiring"
+                ? "sidebarItemContainerSelected"
+                : "sidebarItemContainer"
+            }
+          >
+            <div class="sidebarItemIcon">
+              <PermIdentityOutlinedIcon />
+            </div>
+            <div class="sidebarItemText">Hiring</div>
+          </Link>{" "}
+          <Link
             to="/Profile"
             class={
               window.location.pathname == "/Profile"
@@ -117,20 +138,7 @@ function SidebarCanva() {
             <div class="sidebarItemIcon">
               <PermIdentityOutlinedIcon />
             </div>
-            <div class="sidebarItemText">My Profile</div>
-          </Link>{" "}
-          <Link
-            to="/Modal"
-            class={
-              window.location.pathname == "/Modal"
-                ? "sidebarItemContainerSelected"
-                : "sidebarItemContainer"
-            }
-          >
-            <div class="sidebarItemIcon">
-              <PermIdentityOutlinedIcon />
-            </div>
-            <div class="sidebarItemText">Hiring</div>
+            <div class="sidebarItemText">Profile</div>
           </Link>
           <div class="sidebarSectionHeader">
             <div class="sidebarSectionHeaderText">Communities (3)</div>

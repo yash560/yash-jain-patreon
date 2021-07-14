@@ -14,6 +14,7 @@ const Button = styled.button`
   font-size: 24px;
   cursor: pointer;
 `;
+
 export const Layout = () => {
   const [userData, setUserData] = useState({});
   //console.log(userData);
@@ -30,7 +31,7 @@ export const Layout = () => {
           <Route
             path="/Profile"
             exact
-            //   component={NewProfile}
+            //   component={NewProfile} 
             render={(props) => (
               <NewProfile
                 {...props}

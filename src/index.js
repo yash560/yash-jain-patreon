@@ -14,12 +14,16 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./Hiring/components/theme.css";
 import Hiring from "./Hiring/components/Hiring";
 import CommentPage from "./Hiring/components/CommentPage";
+import HomeCanva from "./HomeCanva/HomeCanva";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/Modal" render={(props) => <Hiring {...props} />} />
+        {/* <Route exact path="/Modal" render={(props) => <Hiring {...props} />} /> */}
+        <Route exact path="/Hiring">
+          <Hiring />
+        </Route>
         <Route
           exact
           path="/comment/:postId?"
@@ -27,6 +31,9 @@ ReactDOM.render(
         />
         <Route exact path="/Podcasts">
           <App />
+        </Route>{" "}
+        <Route exact path="/homes">
+          <HomeCanva />
         </Route>
         <Route exact path="/Jobs">
           <Jobs />
