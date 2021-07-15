@@ -805,7 +805,7 @@ export const NewProfile = ({ user, setUserData }) => {
         <div className="left-sidebar-container">
           <SidebarCanva />
         </div>
-        <div className="dash-container">
+        <div className=" containerProfile">
           <div className="mobile hidenav">
             <div class="toggle">
               <div class="toggle-line"></div>
@@ -1143,7 +1143,10 @@ export const NewProfile = ({ user, setUserData }) => {
                         Get noticed by recruitments. Add things like hackathons
                         and classes you’ve TA’d.
                       </p>
-                      <button class="AddButton btn-badge" onClick={openExpiIdModal}>
+                      <button
+                        class="AddButton btn-badge"
+                        onClick={openExpiIdModal}
+                      >
                         Add ID Card
                       </button>
                     </div>

@@ -15,10 +15,20 @@ h2 {
   bottom: 0;
   width: 260px;
 }
-.dash-container {
-  width: calc(100% - 260px);
+.containerProfile {
+  width: calc(100% - 270px);
   min-height: auto;
   max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+.dash-container {
+  width: calc(100% - 240px);
+  min-height: auto;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
   float: right;
 }
 .newProfile {
@@ -176,8 +186,9 @@ element.style {
 .AddButton {
   outline: none;
   border: none;
-  padding: 10px 15px;
+  padding: 8px 15px;
   font-weight: 600;
+  font-size: 0.8rem;
   background-color: #01a3a4;
   color: #fff;
   border-radius: 5px;

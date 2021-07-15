@@ -9,13 +9,17 @@
   background-color: transparent;
   place-items: center;
 }
-.maincontainer {
-  margin-left: 17.5rem;
-  margin-top: 1rem;
-  padding-top: 4rem;
+.HomeCanvamaincontainer {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: calc(100% - 280px) !important;
 }
 @media (max-width: 1024px) {
-  .maincontainer {
+  .HomeCanvamaincontainer {
     margin-left: 0;
     padding-top: 0;
   }

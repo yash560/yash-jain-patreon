@@ -31,7 +31,7 @@ export const Layout = () => {
           <Route
             path="/Profile"
             exact
-            //   component={NewProfile} 
+            //   component={NewProfile}
             render={(props) => (
               <NewProfile
                 {...props}

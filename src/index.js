@@ -15,11 +15,15 @@ import "./Hiring/components/theme.css";
 import Hiring from "./Hiring/components/Hiring";
 import CommentPage from "./Hiring/components/CommentPage";
 import HomeCanva from "./HomeCanva/HomeCanva";
+import { Company } from "../src/Company-components/dashboard/Company";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
+        <Route exact path="/Company">
+          <Company />
+        </Route>
         {/* <Route exact path="/Modal" render={(props) => <Hiring {...props} />} /> */}
         <Route exact path="/Hiring">
           <Hiring />

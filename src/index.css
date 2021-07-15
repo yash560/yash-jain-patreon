@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none !important;
-
+  scroll-behavior: smooth !important;
   font-family: Inter !important;
 }
 @tailwind base;
@@ -12,22 +12,6 @@
 
 .fas {
   cursor: pointer;
-}
-::-webkit-scrollbar {
-  width: 5px;
-  display: none;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(192, 192, 192);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 body,
 html {

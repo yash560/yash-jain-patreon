@@ -2,8 +2,10 @@
   background: #fafafa;
   color: #0e0e0e;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   padding: 1.625rem 0;
   position: relative;
@@ -18,25 +20,30 @@
   background-color: white;
   padding: 1rem 3rem;
   border-radius: 5px;
-  width: 93%;
+  width: 1000px;
   height: 3.125rem;
-  margin-top: 3rem;
+  margin-top: 8rem;
   margin-left: 2.3rem;
+  justify-self: center;
+
   border: 1px solid lightgray;
 }
 .input:focus {
   outline: none;
   border: 1px solid rgb(44, 44, 44);
 }
-.card {
+.cardjobs {
   margin-top: 0.8rem;
-  border-radius: 0.3125rem;
-  padding: 0.9375rem;
-  width: 93%;
+  width: 1000px;
   margin-bottom: 0.9375rem;
-  border: 1px solid #dadada;
-  background: #fff;
+  height: 90vh;
   margin-left: 2.3rem;
+}
+.cardJobsInside {
+  padding: 0.9375rem;
+  border-radius: 0.3125rem;
+  background-color: #fff;
+  border: 1px solid #dadada;
 }
 .MainBodyHeader {
   width: 100%;
