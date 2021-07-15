@@ -4,7 +4,7 @@ import Select from "react-select";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { getAllCompanies } from "../backend/apiconnector";
 import SkeletonLoader from "tiny-skeleton-loader-react";
-
+import SidebarCanva from "../../Canva/SidebarCanva";
 import countrydata from "../../assets/countries.json";
 
 class Company extends React.Component {
@@ -42,7 +42,7 @@ class Company extends React.Component {
         companies: [],
         page: 1,
         loading: true,
-        countries:[...this.state.countries,filter.value]
+        countries: [...this.state.countries, filter.value],
       },
       () => {
         this.nextscroll();
@@ -59,7 +59,7 @@ class Company extends React.Component {
       array[i] = array[j];
       array[j] = temp;
     }
-    console.log(array)
+    console.log(array);
     return array;
   }
 
@@ -72,7 +72,7 @@ class Company extends React.Component {
   }
 
   nextscroll() {
-    console.log(this.state.page)
+    console.log(this.state.page);
     getAllCompanies(this.state.page, this.state.filter)
       .then((data) => {
         // console.log(data)
@@ -91,38 +91,37 @@ class Company extends React.Component {
         });
 
         let compLocFilter = [];
-        
-        console.log(companylist)
 
-        companylist.forEach(company => {
-            
-            let duplicate = false;
-            let locationss = [];
-            
-            // console.log(company.locations)
+        console.log(companylist);
 
-            company.locations.forEach((locc,i) => {
-              company.locations.slice(0,i).forEach(val => {
-                // console.log(val)
-                // console.log(locc)
-                if((locc.city === val.city && locc.state === val.state)){
-                  duplicate=true;
-                }
-              })
-              if(!duplicate){
-                locationss.push(locc)
+        companylist.forEach((company) => {
+          let duplicate = false;
+          let locationss = [];
+
+          // console.log(company.locations)
+
+          company.locations.forEach((locc, i) => {
+            company.locations.slice(0, i).forEach((val) => {
+              // console.log(val)
+              // console.log(locc)
+              if (locc.city === val.city && locc.state === val.state) {
+                duplicate = true;
               }
-              // console.log(locationss)
-            })
-            compLocFilter.push({...company, locations: locationss});
-            // console.log(compLocFilter)
-        })
+            });
+            if (!duplicate) {
+              locationss.push(locc);
+            }
+            // console.log(locationss)
+          });
+          compLocFilter.push({ ...company, locations: locationss });
+          // console.log(compLocFilter)
+        });
         this.setState({
-            status: data.status,
-            companies: compLocFilter,
-            hasMore: data.companies.length < this.state.page*8 ? false : true,
-            page: nextPageNumber,
-            loading: false,
+          status: data.status,
+          companies: compLocFilter,
+          hasMore: data.companies.length < this.state.page * 8 ? false : true,
+          page: nextPageNumber,
+          loading: false,
         });
       })
       .catch((err) => console.log(err));
@@ -133,12 +132,12 @@ class Company extends React.Component {
       <>
         <nav className="navbar">
           <h1>Companies</h1>
-          <div className="location-dropdown">
+          <div className="Company-location-dropdown">
             <Select
               options={this.state.countries}
               className="loc-drop"
               value={this.state.filter}
-              onChange={(e)=>this.handleFilterChange(e)}
+              onChange={(e) => this.handleFilterChange(e)}
               placeholder={
                 this.state.filter === "all"
                   ? "Select the location.."
@@ -147,8 +146,9 @@ class Company extends React.Component {
             />
           </div>
         </nav>
-        <div className="main-content-container">
-          <div className="cards">
+        <SidebarCanva />
+        <div className="main-content-Company_container ">
+          <div className="Company_Cards">
             <InfiniteScroll
               dataLength={this.state.companies.length}
               next={this.nextscroll}
@@ -159,35 +159,38 @@ class Company extends React.Component {
                 </p>
               }
             >
-              <div className="all-cards">
-                {this.state.companies.length > 0 ?
-                this.state.companies.map((comp) => {
-                  return (
-                    <Card key={comp._id} comp={comp} loc={this.state.filter} />
-                  );
-                })
-                :
-                [1,1,1,1,1,1,1,1,1].map(() => (
-                  <div className="card-container">
-                    <div className="details">
-                      <SkeletonLoader width="75px" height="75px" />
-                      <div className="main-detail">
-                        <div className="comp-name">
-                          <SkeletonLoader height="30px" />
-                        </div>
-                        <div className="location">
-                          <SkeletonLoader height="1.5625rem" />
-                        </div>
-                        <div className="people">
-                          <SkeletonLoader height="1.4375rem" />
-                        </div>
-                        <div className="no-of-jobs">
-                          <SkeletonLoader height="1.4375rem" />
+              <div className="all-Company_Cards">
+                {this.state.companies.length > 0
+                  ? this.state.companies.map((comp) => {
+                      return (
+                        <Card
+                          key={comp._id}
+                          comp={comp}
+                          loc={this.state.filter}
+                        />
+                      );
+                    })
+                  : [1, 1, 1, 1, 1, 1, 1, 1, 1].map(() => (
+                      <div className="card-Company_container">
+                        <div className="details">
+                          <SkeletonLoader width="75px" height="75px" />
+                          <div className="main-detail">
+                            <div className="comp-name">
+                              <SkeletonLoader height="30px" />
+                            </div>
+                            <div className="location">
+                              <SkeletonLoader height="1.5625rem" />
+                            </div>
+                            <div className="people">
+                              <SkeletonLoader height="1.4375rem" />
+                            </div>
+                            {/* <div className="no-of-jobs">
+                              <SkeletonLoader height="1.4375rem" />
+                            </div> */}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                ))}
+                    ))}
               </div>
               {/* {this.state.hasMore && this.state.companies.length > 0 && (
                 <p style={{ textAlign: "center" }}>

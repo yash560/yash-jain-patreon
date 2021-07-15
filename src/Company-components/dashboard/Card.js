@@ -10,35 +10,32 @@ export const Card = ({ comp, loc }) => {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-  useEffect(() => {
-  }, []);
+  useEffect(() => {}, []);
 
-  const displaylocation = (company,name) => {
+  const displaylocation = (company, name) => {
     // console.log(company)
-    let location = ''
+    let location = "";
 
-    if(company === undefined){
+    if (company === undefined) {
       return location;
     }
-    const { city, state, country } = company
-    if(!state){
-      location = city + ", " + country
-    }
-    else if(!city){
-      location = state + ", " + country
-    }
-    else {
-      location = city + ", " + state
+    const { city, state, country } = company;
+    if (!state) {
+      location = city + ", " + country;
+    } else if (!city) {
+      location = state + ", " + country;
+    } else {
+      location = city + ", " + state;
     }
 
     return location;
-  }
+  };
 
-  const [compCount , setCompCount ] = useState([])
+  const [compCount, setCompCount] = useState([]);
 
   const loadContent = () => {
     const findlocindex = (filter, locarr) => {
-      for(let i=0; i<locarr.length; i++){
+      for (let i = 0; i < locarr.length; i++) {
         let locs = [];
         // locarr.slice(0,i+1).forEach(val => {
         //   console.log(val)
@@ -48,29 +45,38 @@ export const Card = ({ comp, loc }) => {
         //   }
         // })
 
-        if(locarr[i].city === filter || locarr[i].country === filter){
-          return locarr[i]
+        if (locarr[i].city === filter || locarr[i].country === filter) {
+          return locarr[i];
         }
       }
-      return locarr[0]
-    }
+      return locarr[0];
+    };
 
     // console.log(findlocindex(loc,comp.locations))
-    const location = JSON.stringify(displaylocation(findlocindex(loc, comp.locations)))
+    const location = JSON.stringify(
+      displaylocation(findlocindex(loc, comp.locations))
+    );
 
     const loadLocation = (compLoc) => {
       const locations = compLoc.filter((location) => {
-        if(location.city === loc || location.state === loc || location.country === loc){
-          return true
+        if (
+          location.city === loc ||
+          location.state === loc ||
+          location.country === loc
+        ) {
+          return true;
         }
       });
       const Loc_Content = locations.map((loc) => {
-        return <div className="location" key={'loc-' + comp._id}>{displaylocation(loc)}</div>
-      })
-      return Loc_Content
-    }
+        return (
+          <div className="location" key={"loc-" + comp._id}>
+            {displaylocation(loc)}
+          </div>
+        );
+      });
+      return Loc_Content;
+    };
 
-    
     // console.log(locations)
 
     if (loading) {
@@ -87,9 +93,9 @@ export const Card = ({ comp, loc }) => {
             <div className="people">
               <SkeletonLoader height="1.4375rem" />
             </div>
-            <div className="no-of-jobs">
+            {/* <div className="no-of-jobs">
               <SkeletonLoader height="1.4375rem" />
-            </div>
+            </div> */}
           </div>
         </div>
       );
@@ -104,40 +110,55 @@ export const Card = ({ comp, loc }) => {
         //   }}
         //   style={{ textDecoration: "none", color: "black" }}
         // >
-          <div className="details">
-            <img src={comp.logo} alt="" className="card-img" />
-            <div className="main-detail">
-              <div className="comp-name">{comp.name.length < 15 ? comp.name : comp.name.slice(0,15) + '...'}</div>
-              {/* <div className="location">{JSON.parse(location)}</div> */}
-              {/* {console.log(location.split('"'))} */}
-              {loc === "all" && (
-                  <div className="location">{location.split('"')[1]}</div>
-              )}
-              {loc !== "all" && (
+        <div className="details">
+          <img src={comp.logo} alt="" className="card-img" />
+          <div className="main-detail">
+            <div className="comp-name">
+              {comp.name.length < 15
+                ? comp.name
+                : comp.name.slice(0, 15) + "..."}
+            </div>
+            {/* <div className="location">{JSON.parse(location)}</div> */}
+            {/* {console.log(location.split('"'))} */}
+            {loc === "all" && (
+              <div className="location">{location.split('"')[1]}</div>
+            )}
+            {
+              loc !== "all" && loadLocation(comp.locations)
+              // comp.locations.map((location,i) => {
+              //   // console.log('11', location)
+              //   // if(comp.name === "Anyline"){
+              //   //   console.log(comp)
+              //   // }
 
+              //   // console.log(comp.locations)
+              //   if(location.city === loc || location.state === loc || location.country === loc) {
+              //     console.log(location)
+              //       // return <div className="location" key={'loc-' + comp._id}>{displaylocation(location)}</div>
+              //   }
+              // })
+            }
 
-                  loadLocation(comp.locations)
-                  // comp.locations.map((location,i) => {
-                  //   // console.log('11', location)
-                  //   // if(comp.name === "Anyline"){
-                  //   //   console.log(comp)
-                  //   // }
-                    
-                  //   // console.log(comp.locations)
-                  //   if(location.city === loc || location.state === loc || location.country === loc) {
-                  //     console.log(location)
-                  //       // return <div className="location" key={'loc-' + comp._id}>{displaylocation(location)}</div>
-                  //   }
-                  // })
-              )}
-
-              <div className="people">{comp.number_of_assignments} Assignment{comp.number_of_assignments>1?'s':''}</div>
-                <div className="no-of-jobs">{comp.openings>1?`${comp.openings} Openings`:comp.openings===1?'1 Opening':'Openings yet to be updated'}</div>
+            <div className="people">
+              {comp.number_of_assignments} Assignment
+              {comp.number_of_assignments > 1 ? "s" : ""}
+            </div>
+            <div className="no-of-jobs">
+              {comp.openings > 1
+                ? `${comp.openings} Openings`
+                : comp.openings === 1
+                ? "1 Opening"
+                : "Openings yet to be updated"}
             </div>
           </div>
+        </div>
         // </Link>
       );
     }
   };
-  return <div className="card-container" key={comp._id}>{loadContent()}</div>;
+  return (
+    <div className="card-Company_container" key={comp._id}>
+      {loadContent()}
+    </div>
+  );
 };

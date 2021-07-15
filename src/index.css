@@ -15,7 +15,7 @@
 }
 body,
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: Walsheim, sans-serif;
 
   text-rendering: optimizelegibility;

@@ -134,7 +134,6 @@
 .sidebarItemContainer {
   font-weight: 400;
   position: relative;
-  min-width: 17.5rem;
   min-height: 3rem;
   padding: 0 1.5rem;
   color: #0e0e0e !important;
