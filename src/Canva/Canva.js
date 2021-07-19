@@ -15,13 +15,13 @@ function Jobs() {
       <div class="mainCanva dash-container">
         {" "}
         <HeaderBarCanva />
-        <input
+        {/* <input
           class="input"
           type="text"
           placeholder="Search Events"
           name=""
           id=""
-        />
+        /> */}
         <div class="cardjobs">
           <div class="cardJobsInside">
             <div class="MainBodyHeader">UPCOMING EVENTS</div>
@@ -38,17 +38,7 @@ function Jobs() {
               /> */}
               <CanvaCard />
               <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
-              <CanvaCard />
+              <CanvaCard /> 
               <CanvaCard />
               <CanvaCard />
             </div>

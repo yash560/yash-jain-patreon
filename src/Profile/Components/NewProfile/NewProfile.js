@@ -408,7 +408,7 @@ export const NewProfile = ({ user, setUserData }) => {
   let resumeUI = resume.map((file, index) => {
     return (
       <div className="file">
-        <input type="checkbox"></input>
+        <input type="checkbox" className="checkboxProfileDocument"></input>
         <p>
           {file.name}{" "}
           {!file.verified ? (
@@ -438,7 +438,7 @@ export const NewProfile = ({ user, setUserData }) => {
   let transcriptsUI = transcripts.map((file, index) => {
     return (
       <div className="file">
-        <input type="checkbox"></input>
+        <input type="checkbox" className="checkboxProfileDocument"></input>
         <p>
           {file.name}{" "}
           {!file.verified ? (
@@ -468,7 +468,7 @@ export const NewProfile = ({ user, setUserData }) => {
   let workCertiUI = workCerti.map((file, index) => {
     return (
       <div className="file">
-        <input type="checkbox"></input>
+        <input type="checkbox" className="checkboxProfileDocument"></input>
         <p>
           {file.name}{" "}
           {!file.verified ? (
@@ -498,7 +498,7 @@ export const NewProfile = ({ user, setUserData }) => {
   let otherCertiUI = otherCerti.map((file, index) => {
     return (
       <div className="file">
-        <input type="checkbox"></input>
+        <input type="checkbox" className="checkboxProfileDocument"></input>
         <p>
           {file.name}{" "}
           {!file.verified ? (
@@ -1197,7 +1197,11 @@ export const NewProfile = ({ user, setUserData }) => {
                         <h2>Resume</h2>
                         {resume.length == 0 ? (
                           <div className="file">
-                            <input type="checkbox"></input>
+                            <input
+                              type="checkbox"
+                              cla
+                              ssNameclassName="checkboxProfileDocument"
+                            ></input>
                             <p>
                               Draft Collection
                               <span className="verfication-pending">
@@ -1218,7 +1222,11 @@ export const NewProfile = ({ user, setUserData }) => {
                         <h2>Transcripts</h2>
                         {transcripts.length == 0 ? (
                           <div className="file">
-                            <input type="checkbox"></input>
+                            <input
+                              type="checkbox"
+                              cla
+                              ssNameclassName="checkboxProfileDocument"
+                            ></input>
                             <p>
                               Draft Collection
                               <span className="verfication-done">Verified</span>
@@ -1237,7 +1245,11 @@ export const NewProfile = ({ user, setUserData }) => {
                         <h2>Work Certificates</h2>
                         {workCerti.length == 0 ? (
                           <div className="file">
-                            <input type="checkbox"></input>
+                            <input
+                              type="checkbox"
+                              cla
+                              ssNameclassName="checkboxProfileDocument"
+                            ></input>
                             <p>Draft Collection</p>
                             <p>June 1, 2021</p>
                             <div>
@@ -1253,7 +1265,11 @@ export const NewProfile = ({ user, setUserData }) => {
                         <h2>Other Certificates</h2>
                         {otherCerti.length == 0 ? (
                           <div className="file">
-                            <input type="checkbox"></input>
+                            <input
+                              type="checkbox"
+                              cla
+                              ssNameclassName="checkboxProfileDocument"
+                            ></input>
                             <p>Draft Collection</p>
                             <p>June 1, 2021</p>
                             <div>

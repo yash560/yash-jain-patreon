@@ -7,7 +7,7 @@ import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 function HeaderBarCanva() {
   return (
     <div class="HeaderBarCanva">
-      <div class="HeaderBarInsideWidth">
+      {/* <div class="HeaderBarInsideWidth">
         <span class="HeaderBarCanvaLeft">
           <div class="HeaderBarItem">
             <DateRangeIcon fontSize="small" />
@@ -32,7 +32,7 @@ function HeaderBarCanva() {
             <ArrowDropDownIcon />
           </div>
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

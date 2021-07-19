@@ -21,39 +21,26 @@ function CanvaCatagoriesCard({
   return (
     <div>
       <div>
-        {time == true ? <MyLoader /> : ""}
+        {time == true ? (
+          <div class="loadingCardCanva">
+            <MyLoader />{" "}
+          </div>
+        ) : (
+          ""
+        )}
         {time == false ? (
-          <div class="canvaBodyCard">
+          <div class="canvaBodyCardCatagory">
             <div class="canvaBodyCardContent">
-              <div class="canvaBodyCardImage">
-                <img
-                  src={CompanyBackground}
-                  class="canvaBodyCardCoverImagecatagory "
-                  alt=""
-                  srcset=""
-                />
+              <img
+                src={CompanyBackground}
+                class="canvaBodyCardCoverImagecatagory "
+                alt=""
+                srcset=""
+              />
+              <div class="canvaBodyCardHeader canvaBodyCardHeaderCatagory">
+                {EventName}{" "}
               </div>
-              <div class="canvaBodyCardHeader">{EventName} </div>
               <div class="canvaBodyCardBody">{EventSubText} </div>
-
-              {/* <div class="canvaBodyCardFooterIcon">
-                <div
-                  onClick={(e) => {
-                    if (vote == true) {
-                      setvote(false);
-                    } else {
-                      setvote(true);
-                    }
-                  }}
-                  class="canvaBodyCardsquarebuttonsecondary"
-                >
-                  {vote == true ? "Upvoted" : "Upvote"}
-                  <ArrowDropDownIcon />
-                </div>
-                <div class="canvaBodyCardBody2">
-                  {vote == true ? 1 : 0} Interested
-                </div>
-              </div> */}
             </div>
           </div>
         ) : (

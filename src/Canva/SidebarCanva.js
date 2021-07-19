@@ -5,77 +5,69 @@ import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 import PermIdentityOutlinedIcon from "@material-ui/icons/PermIdentityOutlined";
 import AddOutlinedIcon from "@material-ui/icons/AddOutlined";
 import { Link, useHistory } from "react-router-dom";
+import { GrFormClose } from "react-icons/gr";
 function SidebarCanva() {
-  const [settingsOpen, setsettingsOpen] = useState(false);
+  const [Canva_settingsOpen, setCanva_settingsOpen] = useState(false);
   const history = useHistory();
   return (
     <div>
-      <div class="sidebar">
-        {settingsOpen == true ? (
-          <div class="settings">
-            <div class="settingsheader">
+      <div class="Canva_sidebar">
+        {Canva_settingsOpen == true ? (
+          <div class="Canva_settings">
+            <div class="Canva_settingsheader">
               <span>Your Account</span>
-              <i
-                onClick={() => {
-                  setsettingsOpen(false);
-                }}
-                class="fas settingsheaderClose fa-times"
-              ></i>
+              <div class=" Canva_settingsheaderClose ">
+                <GrFormClose
+                  onClick={() => {
+                    setCanva_settingsOpen(false);
+                  }}
+                />
+              </div>{" "}
             </div>
             <div
               onClick={(e) => {
                 history.push("/Settings");
               }}
-              class="settingsbody"
+              class="Canva_settingsbody"
             >
               Settings
             </div>
-            <div class="settingsbody">Refferal</div>
-            <div class="settingsbody">Logout</div>
+            <div class="Canva_settingsbody">Refferal</div>
+            <div class="Canva_settingsbody">Logout</div>
           </div>
         ) : (
           " "
         )}
-        <div class="sidebar__header">
+        <div class="Canva_sidebar__header">
           <i class="fas fa-bars"></i>
-          <div class="sidebarLogo">
+          <div class="Canva_sidebarLogo">
             <img
               src="https://images.jumpstart.me/frontend/brand/canvas-logo-combined.svg"
               alt=""
               width="100%"
             />
           </div>
-          <div class="sidebarIconsDiv">
-            {settingsOpen == true ? (
-              <div
-                onClick={() => {
-                  setsettingsOpen(false);
-                }}
-                class="sidebarIcons"
-              >
-                <img
-                  class="sidebarIcon"
-                  src="https://images.jumpstart.me/frontend/icons/settings.svg"
-                  alt=""
-                />
-              </div>
-            ) : (
-              <div
-                onClick={() => {
-                  setsettingsOpen(true);
-                }}
-                class="sidebarIcons"
-              >
-                <img
-                  class="sidebarIcon"
-                  src="https://images.jumpstart.me/frontend/icons/settings.svg"
-                  alt=""
-                />
-              </div>
-            )}
-            <div class="sidebarIcons">
+          <div class="Canva_sidebarIconsDiv">
+            <div
+              onClick={() => {
+                if (Canva_settingsOpen === true) {
+                  setCanva_settingsOpen(false);
+                } else {
+                  setCanva_settingsOpen(true);
+                }
+              }}
+              class="Canva_sidebarIcons"
+            >
               <img
-                class="sidebarIcon"
+                class="Canva_sidebarIcon"
+                src="https://images.jumpstart.me/frontend/icons/settings.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="Canva_sidebarIcons">
+              <img
+                class="Canva_sidebarIcon"
                 src="https://images.jumpstart.me/frontend/icons/notifications.svg"
                 alt=""
               />
@@ -84,114 +76,131 @@ function SidebarCanva() {
         </div>
         <div
           onClick={() => {
-            setsettingsOpen(false);
+            setCanva_settingsOpen(false);
           }}
-          class="sidebarContainer"
+          class="Canva_sidebarContainer"
         >
           <Link
             to="/homes"
             class={
               window.location.pathname == "/homes"
-                ? "sidebarItemContainerSelected"
-                : "sidebarItemContainer"
+                ? "Canva_sidebarItemContainerSelected"
+                : "Canva_sidebarItemContainer"
             }
           >
-            <div class="sidebarItemIcon">
+            <div class="Canva_sidebarItemIcon">
               <HomeOutlinedIcon />
             </div>
-            <div class="sidebarItemText">Home</div>
+            <div class="Canva_sidebarItemText">Home</div>
+          </Link>
+          <Link
+            to="/for_you"
+            class={
+              window.location.pathname == "/for_you"
+                ? "Canva_sidebarItemContainerSelected"
+                : "Canva_sidebarItemContainer"
+            }
+          >
+            <div class="Canva_sidebarItemIcon">
+              <HomeOutlinedIcon />
+            </div>
+            <div class="Canva_sidebarItemText">For you</div>
           </Link>
           <Link
             to="/Jobs"
             class={
               window.location.pathname == "/Jobs"
-                ? "sidebarItemContainerSelected"
-                : "sidebarItemContainer"
+                ? "Canva_sidebarItemContainerSelected"
+                : "Canva_sidebarItemContainer"
             }
           >
-            <div class="sidebarItemIcon">
+            <div class="Canva_sidebarItemIcon">
               <ExploreOutlinedIcon />
             </div>
-            <div class="sidebarItemText">Jobs & Events</div>
+            <div class="Canva_sidebarItemText">Jobs & Events</div>
           </Link>
           <Link
             to="/Hiring"
             class={
               window.location.pathname == "/Hiring"
-                ? "sidebarItemContainerSelected"
-                : "sidebarItemContainer"
+                ? "Canva_sidebarItemContainerSelected"
+                : "Canva_sidebarItemContainer"
             }
           >
-            <div class="sidebarItemIcon">
+            <div class="Canva_sidebarItemIcon">
               <PermIdentityOutlinedIcon />
             </div>
-            <div class="sidebarItemText">Hiring</div>
+            <div class="Canva_sidebarItemText">Hiring</div>
           </Link>{" "}
           <Link
             to="/Profile"
             class={
               window.location.pathname == "/Profile"
-                ? "sidebarItemContainerSelected"
-                : "sidebarItemContainer"
+                ? "Canva_sidebarItemContainerSelected"
+                : "Canva_sidebarItemContainer"
             }
           >
-            <div class="sidebarItemIcon">
+            <div class="Canva_sidebarItemIcon">
               <PermIdentityOutlinedIcon />
             </div>
-            <div class="sidebarItemText">Profile</div>
+            <div class="Canva_sidebarItemText">Profile</div>
           </Link>
-          <div class="sidebarSectionHeader">
-            <div class="sidebarSectionHeaderText">Communities (3)</div>
-            <div class="sidebarJoinButton">
+          <div class="Canva_sidebarSectionHeader">
+            <div class="Canva_sidebarSectionHeaderText">Communities (3)</div>
+            <div class="Canva_sidebarJoinButton">
               <AddOutlinedIcon />
               Join
             </div>
           </div>
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
+          <div class="Canva_sidebarItemContainer">
+            <div class="Canva_sidebarItemIcon">
               <img
                 src="https://s3-us-west-1.amazonaws.com/images.jumpstart.me/frontend/communities/logos/general-advice.png"
                 alt=""
                 height="100%"
               />
             </div>
-            <div class="sidebarItemText">General Advice</div>
+            <div class="Canva_sidebarItemText">General Advice</div>
           </div>
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
+          <div class="Canva_sidebarItemContainer">
+            <div class="Canva_sidebarItemIcon">
               <img
                 src="https://jumpstart-static.s3.amazonaws.com/backend/mediauploads/media/rBhfs_uAR3CNdYZ1Bh8tpg.png"
                 alt=""
                 height="100%"
               />
             </div>
-            <div class="sidebarItemText">Recruiter Announcements</div>
+            <div class="Canva_sidebarItemText">Recruiter Announcements</div>
           </div>
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
+          <div class="Canva_sidebarItemContainer">
+            <div class="Canva_sidebarItemIcon">
               <img
                 src="https://s3-us-west-1.amazonaws.com/images.jumpstart.me/frontend/communities/logos/remote-work.png"
                 alt=""
                 height="100%"
               />
             </div>
-            <div class="sidebarItemText">Remote Work</div>
+            <div class="Canva_sidebarItemText">Remote Work</div>
           </div>
-          <div class="sidebarSectionHeader">
-            <div class="sidebarSectionHeaderText">Direct messages</div>
+          <div class="Canva_sidebarSectionHeader">
+            <div class="Canva_sidebarSectionHeaderText">Direct messages</div>
           </div>
-          <div class="sidebarItemContainer">
-            <input class="sidebarSearchbar" type="text" placeholder="Search" />
+          <div class="Canva_sidebarItemContainer">
+            <input
+              class="Canva_sidebarSearchbar"
+              type="text"
+              placeholder="Search"
+            />
           </div>
-          <div class="sidebarItemContainer">
-            <div class="sidebarItemIcon">
+          <div class="Canva_sidebarItemContainer">
+            <div class="Canva_sidebarItemIcon">
               <img
                 src="https://jumpstart-static.s3.amazonaws.com/backend/organizations/organization/C8wb0Bk6STe_UhZ8KyhF_g.png"
                 alt=""
                 height="100%"
               />
             </div>
-            <div class="sidebarItemText">Team Canvas</div>
+            <div class="Canva_sidebarItemText">Team Canvas</div>
           </div>
         </div>
       </div>

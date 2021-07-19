@@ -130,7 +130,7 @@ class Company extends React.Component {
   render() {
     return (
       <>
-        <nav className="navbar">
+        <nav className="navbarCompanies">
           <h1>Companies</h1>
           <div className="Company-location-dropdown">
             <Select

@@ -20,7 +20,14 @@ function CanvaCard({
   }, 1000);
   return (
     <div>
-      {time == true ? <MyLoader /> : ""}
+      {time == true ? (
+        <div class="loadingCardCanva">
+          {" "}
+          <MyLoader />
+        </div>
+      ) : (
+        ""
+      )}
       {time == false ? (
         <div class="canvaBodyCard">
           <div class="canvaBodyCardContent">
@@ -49,10 +56,16 @@ function CanvaCard({
                     setvote(true);
                   }
                 }}
-                class="canvaBodyCardsquarebuttonsecondary"
+                class={
+                  vote === true
+                    ? "canvaBodyCardsquarebuttonsecondaryUpvoted"
+                    : "canvaBodyCardsquarebuttonsecondary"
+                }
               >
                 {vote == true ? "Upvoted" : "Upvote"}
-                <ArrowDropDownIcon />
+                <div class={vote === true ? "upvotedArrow" : "ArrowJobsupvote"}>
+                  <ArrowDropDownIcon />
+                </div>
               </div>
               <div class="canvaBodyCardBody2">
                 {vote == true ? 1 : 0} Interested

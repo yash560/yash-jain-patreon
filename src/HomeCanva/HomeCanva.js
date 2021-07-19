@@ -4,9 +4,10 @@ import "./HomeCanva.css";
 function HomeCanva() {
   return (
     <div>
-      <SidebarCanva />
+      <SidebarCanva /> <div className="newProfile__header"></div>
       <div class="HomeCanvamaincontainer">
-        <div class="">
+        {" "}
+        <div class="HomeCanvamaincontainerFirst">
           <div class="title-32-demi">Welcome, Yash</div>
           <div class="align--center ui-12-regular details__members flex">
             <span class="members--count">343,458 members</span>

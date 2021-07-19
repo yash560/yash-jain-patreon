@@ -23,9 +23,12 @@ function Settings() {
         </div>
       ) : (
         ""
-      )}
+      )}{" "}
+      <nav className="navbarCompanies navbarSettings">
+        <h1>Your Settings</h1>
+      </nav>
       <div class="mainCanvaSettings">
-        <div class="settingsHeader">Your Settings</div>
+        {/* <div class="settingsHeader">Your Settings</div> */}
         <div class="SettingsDivision">
           <div class="SettingsDivisionComponent">
             <div class="SettingsDivisionComponentQ">Preffered Name</div>
@@ -172,42 +175,51 @@ function Settings() {
                 />
                 <span class="slider round"></span>
               </label>
-              Community Direct Messaging
+              <span class="communitySettings">
+                <span> Community Direct Messaging</span>{" "}
+                <span class="communitySettingsBody">
+                  {" "}
+                  Allow other community members to message you
+                </span>
+              </span>
             </div>
           </div>
           <div class="SettingsDivisionComponent">
             <div class="SettingsDivisionComponentQ">Email Preferences</div>
             <div class="SettingsDivisionComponentA SettingsDivisionComponentAColumn bold">
-              <div
-                onClick={(e) => {
-                  setsavedSettings(true);
-                }}
-                class="SettingsDivisionComponentAColumnInside"
-              >
-                <label class="checkboxemail">
-                  <input type="checkbox" />
+              <div class="SettingsDivisionComponentAColumnInside">
+                <label class="checkboxemailSettings">
+                  <input
+                    onClick={(e) => {
+                      setsavedSettings(true);
+                    }}
+                    class="checkboxemailSettingsColumn"
+                    type="checkbox"
+                  />
                 </label>
                 Email Preferences
               </div>
-              <div
-                onClick={(e) => {
-                  setsavedSettings(true);
-                }}
-                class="SettingsDivisionComponentAColumnInside"
-              >
-                <label class="checkboxemail">
-                  <input type="checkbox" />
+              <div class="SettingsDivisionComponentAColumnInside">
+                <label class="checkboxemailSettings">
+                  <input
+                    onClick={(e) => {
+                      setsavedSettings(true);
+                    }}
+                    class="checkboxemailSettingsColumn"
+                    type="checkbox"
+                  />
                 </label>
                 Email Preferences
               </div>
-              <div
-                onClick={(e) => {
-                  setsavedSettings(true);
-                }}
-                class="SettingsDivisionComponentAColumnInside"
-              >
-                <label class="checkboxemail">
-                  <input type="checkbox" />
+              <div class="SettingsDivisionComponentAColumnInside">
+                <label class="checkboxemailSettings">
+                  <input
+                    onClick={(e) => {
+                      setsavedSettings(true);
+                    }}
+                    class="checkboxemailSettingsColumn"
+                    type="checkbox"
+                  />
                 </label>
                 Email Preferences
               </div>

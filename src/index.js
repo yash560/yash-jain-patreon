@@ -7,6 +7,7 @@ import Pricing from "./Pricing";
 import Home from "./Home/Home";
 import Careers from "./Career/Careers";
 import Jobs from "./Canva/Canva";
+import For from "./Canva/For";
 import Profile from "./Profile/Profile";
 import AppDirectory from "./App/AppDirectory";
 import Settings from "./Settings/Settings";
@@ -41,6 +42,9 @@ ReactDOM.render(
         </Route>
         <Route exact path="/Jobs">
           <Jobs />
+        </Route>
+        <Route exact path="/for_you">
+          <For />
         </Route>
         <Route exact path="/Profile">
           <Profile />

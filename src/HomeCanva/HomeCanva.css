@@ -5,16 +5,23 @@
   width: fit-content;
   padding: 0;
   height: 8.5rem;
-  width: 90%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
   background-color: transparent;
   place-items: center;
 }
+.HomeCanvamaincontainerFirst {
+  background-color: transparent;
+}
 .HomeCanvamaincontainer {
-  margin-top: 10rem;
+  margin-top: -6.5rem;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: rgb(248 , 248  , 248 );
+  justify-content: flex-start;
   margin-left: auto;
   width: calc(100% - 280px) !important;
 }
@@ -37,7 +44,7 @@
   transition: 0.2s ease;
 }
 .communities-discover-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 0.2s ease;
 }
 .link--no-underline,
@@ -74,10 +81,14 @@ button,
   border-top-left-radius: 16px;
 }
 .title-32-demi {
+  position: relative;
+  z-index: 1;
   color: black;
   margin-left: 1rem;
 }
 .details__members {
+  position: relative;
+  z-index: 1;
   width: 200px;
   display: flex;
   flex-direction: row;
