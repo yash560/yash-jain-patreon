@@ -5,7 +5,11 @@ import "./podcasts/thirdScreen.css";
 import "./podcasts/fourthScreen.css";
 import "./podcasts/fifthScreen.css";
 import Footer from "./Footer";
+import { AiOutlinePlus } from "react-icons/ai";
+import { TiTick, TiEquals } from "react-icons/ti";
+
 import Header from "./Header";
+
 import CheckComponet from "./pricing/CheckComponet";
 function App() {
   return (
@@ -103,7 +107,7 @@ function App() {
             </div>
           </div>
           <div class=" pricingThirdScreenComponentOperator">
-            <i class="fas fa-plus"></i>
+            <AiOutlinePlus />
           </div>
           <div class="pricingThirdScreenComponent">
             <div class="pricingThirdScreenComponentHeader">
@@ -117,7 +121,7 @@ function App() {
             </div>
           </div>
           <div class=" pricingThirdScreenComponentOperator">
-            <i class="fas fa-equals"></i>
+            <TiEquals />
           </div>
           <div class="pricingThirdScreenComponent">
             <div class="pricingThirdScreenComponentHeader pricingThirdScreenComponentHeaderEqual">
@@ -136,7 +140,7 @@ function App() {
             </div>
           </div>
           <div class=" pricingThirdScreenComponentOperator">
-            <i class="fas fa-plus"></i>
+            <AiOutlinePlus />
           </div>
           <div class="pricingThirdScreenComponent">
             <div class="pricingThirdScreenComponentHeader">
@@ -150,7 +154,7 @@ function App() {
             </div>
           </div>
           <div class=" pricingThirdScreenComponentOperator">
-            <i class="fas fa-equals"></i>
+            <TiEquals />
           </div>
           <div class="pricingThirdScreenComponent">
             <div class="pricingThirdScreenComponentHeader pricingThirdScreenComponentHeaderEqual">
@@ -172,13 +176,13 @@ function App() {
               to one another’s crucial problems while breaking down silos.
             </div>
           </div>
-          <div class="cardContainer">
-            <div class="planCardFeatures">
-              <div class="card">
-                <div class="planCardFirstText">
-                  <div class="planCardHeader">Features </div>
+          <div class="PatreonPatreoncardContainer">
+            <div class="planPatreonCardFeatures">
+              <div class="Patreoncard">
+                <div class="planPatreonCardFirstText">
+                  <div class="planPatreonCardHeader">Features </div>
                 </div>
-                <div class="planCardFourthText">
+                <div class="planPatreonCardFourthText">
                   <CheckComponet text="Browse members profiles" />
                   <CheckComponet text="Instant messaging (no of people once selected back)" />
                   <CheckComponet text="Room hosting" />
@@ -192,12 +196,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class=" planCard ">
-              <div class="card">
-                <div class="planCardFirstText">
-                  <div class="planCardHeader">Freemiuim </div>
+            <div class=" planPatreonCard ">
+              <div class="Patreoncard">
+                <div class="planPatreonCardFirstText">
+                  <div class="planPatreonCardHeader">Freemiuim </div>
                 </div>
-                <div class="planCardFourthText">
+                <div class="planPatreonCardFourthText">
                   <CheckComponet iconC="fas fa-check" text="Unlimited" />
                   <CheckComponet iconC="fas fa-check" text="10" />
                   <CheckComponet iconC="fas fa-check" text="1" />
@@ -212,12 +216,12 @@ function App() {
                 <div class="recommendedButton">Coming Soon</div>
               </div>
             </div>
-            <div class="planCard">
-              <div class="card">
-                <div class="planCardFirstText">
-                  <div class="planCardHeader">Premium </div>
+            <div class="planPatreonCard">
+              <div class="Patreoncard">
+                <div class="planPatreonCardFirstText">
+                  <div class="planPatreonCardHeader">Premium </div>
                 </div>
-                <div class="planCardFourthText">
+                <div class="planPatreonCardFourthText">
                   <CheckComponet iconC="fas fa-check" text="Unlimited" />
                   <CheckComponet iconC="fas fa-check" text="Unlimited" />
                   <CheckComponet iconC="fas fa-check" text="Unlimited" />
@@ -229,7 +233,7 @@ function App() {
                   <CheckComponet iconC="fas fa-check" text="Yes" />
                   <CheckComponet iconC="fas fa-check" text="Yes" />
                 </div>
-                <div class="planCardButtons">Coming Soon</div>
+                <div class="planPatreonCardButtons">Coming Soon</div>
               </div>
             </div>
           </div>

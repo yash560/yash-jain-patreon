@@ -78,7 +78,7 @@ class Company extends React.Component {
         // console.log(data)
 
         var nextPageNumber =
-          data.companies.length < 8 ? this.state.page : this.state.page + 1;
+          data.companies.length < 12 ? this.state.page : this.state.page + 1;
         // console.log(nextPageNumber)
 
         var companylist = this.state.companies;
@@ -119,7 +119,7 @@ class Company extends React.Component {
         this.setState({
           status: data.status,
           companies: compLocFilter,
-          hasMore: data.companies.length < this.state.page * 8 ? false : true,
+          hasMore: data.companies.length < this.state.page * 12 ? false : true,
           page: nextPageNumber,
           loading: false,
         });

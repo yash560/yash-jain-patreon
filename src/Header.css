@@ -1,8 +1,8 @@
-.header {
+.Patreonheader {
   height: 65px;
   position: fixed;
   margin-top: 0;
-  border-bottom: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(24, 18, 18);
   width: 100vw;
   left: 0;
   background-color: white;
@@ -15,11 +15,11 @@
   color: rgb(92, 92, 92);
   z-index: 100;
 }
-.headerSm {
+.PatreonheaderSm {
   display: none;
 }
-.headerLeft,
-.headerRight {
+.PatreonheaderLeft,
+.PatreonheaderRight {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,7 +28,7 @@
 
   justify-content: space-evenly;
 }
-.headerLeftComponent {
+.PatreonheaderLeftComponent {
   padding: 1rem;
   cursor: pointer;
   position: relative;
@@ -39,10 +39,10 @@
 .fa-chevron-down {
   margin-left: 0.4rem;
 }
-.headerSearchbarSM {
+.PatreonheaderSearchbarSM {
   display: none;
 }
-.headerSearchbar {
+.PatreonheaderSearchbar {
   width: 260px;
   box-sizing: border-box;
   border: 2px solid rgb(243, 243, 243);
@@ -59,10 +59,10 @@
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
-.headerSearchbar:focus {
+.PatreonheaderSearchbar:focus {
   outline: none;
 }
-.headerRightComponent {
+.PatreonheaderRightComponent {
   margin: 0 1rem;
   cursor: pointer;
 }
