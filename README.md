@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+https://fir-da41e.web.app/Hiring
+https://fir-da41e.web.app/for_you
+https://fir-da41e.web.app/Jobs
+https://fir-da41e.web.app/Settings
+https://fir-da41e.web.app/Company
+https://fir-da41e.web.app/Podcasts
+https://fir-da41e.web.app/Pricing
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
